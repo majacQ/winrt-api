@@ -12,13 +12,16 @@ public DispatcherQueueController DispatcherQueueController.CreateOnDedicatedThre
 ## -description
 Creates a [DispatcherQueue](dispatcherqueue.md) that you can use to run tasks on a dedicated thread.
 
-Equivalent WinUI method: [Microsoft.System.DispatcherQueueController.CreateOnDedicatedThread](/windows/winui/api/microsoft.system.dispatcherqueuecontroller.createondedicatedthread).
-
 ## -returns
 The created **DispatcherQueueController**.
 
 ## -remarks
 You can access the created **DispatcherQueue** via [DispatcherQueueController.DispatcherQueue](dispatcherqueuecontroller_dispatcherqueue.md).
+
+The created **DispatcherQueue** continues running on its dedicated thread until explicitly shut down.
+To avoid thread and memory leaks,
+call [DispatcherQueueController.ShutdownQueueAsync](dispatcherqueuecontroller_shutdownqueueasync_542547627.md)
+when you are finished with the **DispatcherQueue**.
 
 ## -see-also
 

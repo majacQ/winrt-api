@@ -15,14 +15,13 @@ Implements the [ISyndicationText](isyndicationtext.md) interface that encapsulat
 ## -remarks
 The following table maps SyndicationText properties to RSS and Atom feed elements.
 
-<table>
-   <tr><th>SyndicationText</th><th>RSS</th><th>Atom</th></tr>
-   <tr><td>[Text](syndicationtext_text.md)</td><td>(node value)</td><td>(node value)</td></tr>
-   <tr><td>[Type](syndicationtext_type.md)</td><td /><td>type (attribute)</td></tr>
-   <tr><td>[Xml](syndicationtext_xml.md)</td><td /><td>(xhtml node value)</td></tr>
-</table>
+| SyndicationText | RSS | Atom |
+|---|---|---|
+| [Text](syndicationtext_text.md) | (node value) | (node value) |
+| [Type](syndicationtext_type.md) |---| type (attribute) |
+| [Xml](syndicationtext_xml.md) |---| (xhtml node value) |
 
 ## -examples
 
 ## -see-also
-[Quickstart: Accessing a web feed](/previous-versions/windows/apps/hh700374(v=win.10)), [Syndication sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/%5BC%23%5D-Windows%208.1%20Store%20app%20samples/Syndication%20sample/C%23), [AtomPub sample](/samples/browse/)
+[Quickstart: Accessing a web feed](/previous-versions/windows/apps/hh700374(v=win.10)), [Syndication sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/Syndication%20sample), [AtomPub sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/AtomPub%20sample)

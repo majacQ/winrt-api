@@ -12,7 +12,7 @@ public class Setter : Windows.UI.Xaml.SetterBase, Windows.UI.Xaml.ISetter, Windo
 ## -description
 Applies a value to a property in a [Style](style.md) or a [VisualState](visualstate.md).
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.Setter](/windows/winui/api/microsoft.ui.xaml.setter).
+
 
 ## -xaml-syntax
 ```xaml
@@ -53,8 +53,8 @@ This example shows how to use Setter statements in a style for [TextBlock](../wi
     </StackPanel.Resources>
  
     <!-- Apply the TextBlockStyle to 2 different TextBlocks. -->
-    <TextBlock Style="{StaticResource TextBlockStyle}" Text=”Hello”/>
-    <TextBlock Style="{StaticResource TextBlockStyle}" Text=”World”/>
+    <TextBlock Style="{StaticResource TextBlockStyle}" Text="Hello"/>
+    <TextBlock Style="{StaticResource TextBlockStyle}" Text="World"/>
 </StackPanel>
 
 ```
@@ -85,7 +85,7 @@ This example shows how to use multiple Setter statements inside the [VisualState
 
 ```
 
-You can also apply setters to attached property values, by specifying the attached property name in the *AttachedPropertyProvider*.*PropertyName* form. For example, to use a [Setter](setter.md) for the attached property [Canvas.Left](/uwp/api/windows.ui.xaml.controls.canvas#xaml-attached-properties), use this XAML.
+You can also apply setters to attached property values, by specifying the attached property name in the *AttachedPropertyProvider*.*PropertyName* form. For example, to use a [Setter](setter.md) for the attached property [Canvas.Left](/uwp/api/windows.ui.xaml.controls.canvas.left), use this XAML.
 
 ```xaml
 <Setter Property="Canvas.Left" Value="100"/>

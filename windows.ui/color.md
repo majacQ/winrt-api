@@ -42,7 +42,6 @@ Describes a color in terms of alpha, red, green, and blue channels.
 <object property="sc#scA,scR,scG,scB"/>
 ```
 
-
 ## -xaml-values
 <dl><dt>predefinedColor</dt><dd>One of the colors predefined by the Colors class. See members of Colors for a list. These are static properties. Specify just the color name, for example Transparent. Do not include the static class qualifier in the string: for example Colors.Transparent does not parse in XAML.</dd>
 <dt>rgb</dt><dd>A three-character hexadecimal value. The first character specifies the color's R value, the second character specifies the G value, and the third character specifies the B value. For example, 00F.</dd>
@@ -91,7 +90,7 @@ Various predefined Color values are available as static properties on the [Color
 
 In most XAML UI scenarios, a Color isn't used directly as a property value of a [UIElement](../windows.ui.xaml/uielement.md). Instead, a Color is used as a component value of a [Brush](../windows.ui.xaml.media/brush.md) (either [SolidColorBrush](../windows.ui.xaml.media/solidcolorbrush.md) or [LinearGradientBrush](../windows.ui.xaml.media/lineargradientbrush.md)). However, the [Brush](../windows.ui.xaml.media/brush.md) type enables a XAML shorthand that lets you set an attribute value of type [Brush](../windows.ui.xaml.media/brush.md) using a named color string, or a format string that can be parsed into an **ARGB** form. For example, you can set the [Brush](../windows.ui.xaml.media/brush.md)-type value [TextBlock.Foreground](../windows.ui.xaml.controls/textblock_foreground.md) using a syntax such as `<TextBlock Foreground="Cyan" />`. This syntax implicitly creates a new [SolidColorBrush](../windows.ui.xaml.media/solidcolorbrush.md) with a Color value equal to [Cyan](colors_cyan.md) that fills the [Brush](../windows.ui.xaml.media/brush.md)-type value of [TextBlock.Foreground](../windows.ui.xaml.controls/textblock_foreground.md) for that element. For more info on using brushes and colors in XAML, see [Use brushes](/windows/uwp/graphics/using-brushes).
 
-If you use the same color brush often in your XAML, you should define a [SolidColorBrush](../windows.ui.xaml.media/solidcolorbrush.md) as a resource rather than using the inline implicit creation of new values, because that's more efficient. For more info, see [Optimize your XAML markup](/windows/uwp/debug-test-perf/optimize-xaml-loading) or [ResourceDictionary and XAML resource references](/windows/uwp/controls-and-patterns/resourcedictionary-and-xaml-resource-references). You might also want to use system colors, which can be accessed as merged-in resources for themes that the system defines. See [XAML theme resources](/windows/uwp/controls-and-patterns/xaml-theme-resources).
+If you use the same color brush often in your XAML, you should define a [SolidColorBrush](../windows.ui.xaml.media/solidcolorbrush.md) as a resource rather than using the inline implicit creation of new values, because that's more efficient. For more info, see [Optimize your XAML markup](/windows/uwp/debug-test-perf/optimize-xaml-loading) or [ResourceDictionary and XAML resource references](/windows/apps/design/style/xaml-resource-dictionary). You might also want to use system colors, which can be accessed as merged-in resources for themes that the system defines. See [XAML theme resources](/windows/apps/design/style/xaml-theme-resources).
 
 There are also some XAML properties that take a direct Color value. These mostly support animating a Color value that exists on a [Brush](../windows.ui.xaml.media/brush.md). The Windows Runtime supports an interpolation logic so that you can animate from one Color to another in a **From**/**To** animation and the animation will use interpolated Color values as the animation runs. For more info, see [Storyboarded animations](/windows/uwp/graphics/storyboarded-animations).
 
@@ -101,7 +100,21 @@ If you use the "#" token to specify color values in hex form, the hex values are
 
 Strings for named colors are interpreted based on the associated [Colors](colors.md) constants, and the values for **A**, **R**, **G** and **B** are set in the structure as values between 0 and 255 that are representative of that color.
 
-The XAML object element usage (with initialization text) is useful for declaring a Color as a resource in a XAML [ResourceDictionary](../windows.ui.xaml/resourcedictionary.md). For more info, see [ResourceDictionary and XAML resource references](/windows/uwp/controls-and-patterns/resourcedictionary-and-xaml-resource-references).
+The XAML object element usage (with initialization text) is useful for declaring a Color as a resource in a XAML [ResourceDictionary](../windows.ui.xaml/resourcedictionary.md). For more info, see [ResourceDictionary and XAML resource references](/windows/apps/design/style/xaml-resource-dictionary).
+
+This table explains the color value placeholders shown in the XAML Syntax section.
+
+| Value | Notes |
+| - | - |
+| _predefinedColor_ | One of the colors predefined by the [Colors](colors.md) class. See members of `Colors` for a list. These are static properties. Specify just the color name, for example `Transparent`. Do not include the static class qualifier in the string: for example, "Colors.Transparent" does not parse in XAML.<br/>`<Grid Background="Blue"/>`, `<Color>Blue</Color>` |
+| _rgb_ | A three-character hexadecimal value. The first character specifies the color's R value, the second character specifies the G value, and the third character specifies the B value. For example, 00F.<br/>`<Grid Background="#00F"/>`, `<Color>#00F</Color>` |
+| _argb_ | A four-character hexadecimal value. The first character specifies the color's A value, the second character specifies its R value, the third character specifies the G value, and the fourth character specifies its B value. For example, F00F.<br/>`<Grid Background="#F00F"/>`, `<Color>#F00F</Color>` |
+| _rrggbb_ | A six-character hexadecimal value. The first two characters specify the color's R value, the next two specify its G value, and the final two specify its B value. For example, 0000FF.<br/>`<Grid Background="#0000FF"/>`, `<Color>#0000FF</Color>` |
+| _aarrggbb_ | An eight-character hexadecimal value. The first two characters specify the color's A value, the next two specify its R value, the next two specify its G value, and the final two specify its B value. For example, FF0000FF.<br/>`<Grid Background="#FF0000FF"/>`, `<Color>#FF0000FF</Color>` |
+| _scA_ | The color's ScA (alpha) value as a value between 0 and 1.<br/>`<Grid Background="sc#1,0,0,1"/>`, `<Color>sc#1,0,0,1</Color>` |
+| _scR_ | The color's ScR (red) value as a value between 0 and 1. |
+| _scG_ | The color's ScG (green) value as a value between 0 and 1. |
+| _scB_ | The color's ScB (blue) value as a value between 0 and 1. |
 
 ### Projection and members of Color
 
@@ -153,4 +166,4 @@ This code shows a two-way converter for [SolidColorBrush](../windows.ui.xaml.med
 
 
 ## -see-also
-[Use brushes](/windows/uwp/graphics/using-brushes), [Colors](colors.md), [ColorHelper](colorhelper.md), [SolidColorBrush](../windows.ui.xaml.media/solidcolorbrush.md), [LinearGradientBrush](../windows.ui.xaml.media/lineargradientbrush.md), [ResourceDictionary and XAML resource references](/windows/uwp/controls-and-patterns/resourcedictionary-and-xaml-resource-references)
+[Use brushes](/windows/uwp/graphics/using-brushes), [Colors](colors.md), [ColorHelper](colorhelper.md), [SolidColorBrush](../windows.ui.xaml.media/solidcolorbrush.md), [LinearGradientBrush](../windows.ui.xaml.media/lineargradientbrush.md), [ResourceDictionary and XAML resource references](/windows/apps/design/style/xaml-resource-dictionary)

@@ -12,7 +12,6 @@ public class XamlReader : Windows.UI.Xaml.Markup.IXamlReader
 ## -description
 Provides a XAML processor engine for parsing XAML and creating corresponding object trees.
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.Markup.XamlReader](/windows/winui/api/microsoft.ui.xaml.markup.xamlreader).
 
 ## -remarks
 XamlReader  is a utility class with methods that create objects based on an input of XAML markup in string form. XamlReader provides object construction behavior that parallels how XAML is parsed by the Windows Runtime XAML parser and the use of XAML for defining the UI of a UWP app.
@@ -24,7 +23,7 @@ There are several concepts that are important to understand, when you create obj
 
 + The XAML content string must define a single root element.
 + The XAML content string must be well-formed XML, as well as being valid XAML.
-+ The XAML content must define a default xmlns. Typically this is the Windows Runtime XAML vocabulary, as identified by http://schemas.microsoft.com/winfx/2006/xaml/presentation.
++ The XAML content must define a default xmlns. Typically this is the Windows Runtime XAML vocabulary, as identified by `http://schemas.microsoft.com/winfx/2006/xaml/presentation`.
 + Any custom assemblies referenced in a XAML namespace mapping must already be available to the application.
 + The XAML should not attempt to specify [x:Class attribute](/windows/uwp/xaml-platform/x-class-attribute), or include any XAML-defined attributes for event handlers.
 + You can't use [FindName](../windows.ui.xaml/frameworkelement_findname_634111277.md) in the general XAML namescope to find a runtime object added, but you can search within the specific XAML namescope of the object created. For more info, see [XAML namescopes](/windows/uwp/xaml-platform/xaml-namescopes).

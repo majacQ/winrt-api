@@ -12,9 +12,9 @@ public interface IVisualElement
 
 ## -description
 
-Marks an object to indicate to the system that it can resolve to a [CompositionVisual](compositionvisual.md)
+Marks an object to indicate to the system that it can resolve to a composition [Visual](visual.md).
 
-Equivalent WinUI interface: [Microsoft.UI.Composition.IVisualElement](/windows/winui/api/microsoft.ui.composition.ivisualelement).
+
 
 ## -remarks
 

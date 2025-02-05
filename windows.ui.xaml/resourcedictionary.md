@@ -12,7 +12,7 @@ public class ResourceDictionary : Windows.UI.Xaml.DependencyObject, Windows.Foun
 ## -description
 Defines a repository for XAML resources, such as styles, that your app uses. You define the resources in XAML and can then retrieve them in XAML using the [{StaticResource} markup extension](/windows/uwp/xaml-platform/staticresource-markup-extension) and [{ThemeResource} markup extension](/windows/uwp/xaml-platform/themeresource-markup-extension) s. You can also access resources with code, but that is less common.
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.ResourceDictionary](/windows/winui/api/microsoft.ui.xaml.resourcedictionary).
+
 
 ## -xaml-syntax
 ```xaml
@@ -29,7 +29,7 @@ Equivalent WinUI class: [Microsoft.UI.Xaml.ResourceDictionary](/windows/winui/ap
 
 
 ## -remarks
-A resource dictionary is a repository for XAML resources, such as styles, that your app uses. You define the resources in XAML and can then retrieve them in XAML using the [{StaticResource} markup extension](/windows/uwp/xaml-platform/staticresource-markup-extension) and [{ThemeResource} markup extension](/windows/uwp/xaml-platform/themeresource-markup-extension) s. You can also access resources with code, but that is less common. You can use resources to enforce that certain values such as brush colors or pixel measurements are used consistently throughout your app. For more info on using resource dictionaries effectively, see [ResourceDictionary and XAML resource references](/windows/uwp/controls-and-patterns/resourcedictionary-and-xaml-resource-references).
+A resource dictionary is a repository for XAML resources, such as styles, that your app uses. You define the resources in XAML and can then retrieve them in XAML using the [{StaticResource} markup extension](/windows/uwp/xaml-platform/staticresource-markup-extension) and [{ThemeResource} markup extension](/windows/uwp/xaml-platform/themeresource-markup-extension) s. You can also access resources with code, but that is less common. You can use resources to enforce that certain values such as brush colors or pixel measurements are used consistently throughout your app. For more info on using resource dictionaries effectively, see [ResourceDictionary and XAML resource references](/windows/apps/design/style/xaml-resource-dictionary).
 
 ### Uses of **ResourceDictionary** elements
 
@@ -156,7 +156,7 @@ Now suppose there is another file, Common/Styles2.xaml that similarly defines [S
 </Application>
 ```
 
-For info on how merged dictionary resources are resolved, see the "Merged resource dictionaries" section of [ResourceDictionary and XAML resource references](/windows/uwp/controls-and-patterns/resourcedictionary-and-xaml-resource-references).
+For info on how merged dictionary resources are resolved, see the "Merged resource dictionaries" section of [ResourceDictionary and XAML resource references](/windows/apps/design/style/xaml-resource-dictionary).
 
 ### The x:Key property
 
@@ -168,7 +168,7 @@ In XAML, the keys for ResourceDictionaryitems are declared by setting the [x:Key
 
 ### Iterating through a **ResourceDictionary**
 
-You can iterate through a ResourceDictionary in C# or Microsoft Visual Basic. In many cases, such as using **foreach** syntax, the compiler does this casting for you and you won't need to cast to `IEnumerable` explicitly. If you do need to cast explicitly, for example if you want to call [GetEnumerator](/dotnet/api/system.collections.ienumerable.getenumerator?view=dotnet-uwp-10.0&preserve-view=true), cast to [IEnumerable<T>](/dotnet/api/system.collections.generic.ienumerable-1?view=dotnet-uwp-10.0&preserve-view=true) with a **KeyValuePair&lt;Object,Object&gt;** constraint.
+You can iterate through a ResourceDictionary in C# or Microsoft Visual Basic. In many cases, such as using **foreach** syntax, the compiler does this casting for you and you won't need to cast to `IEnumerable` explicitly. If you do need to cast explicitly, for example if you want to call [GetEnumerator](/dotnet/api/system.collections.ienumerable.getenumerator?view=dotnet-uwp-10.0&preserve-view=true), cast to [IEnumerable&lt;T&gt;](/dotnet/api/system.collections.generic.ienumerable-1?view=dotnet-uwp-10.0&preserve-view=true) with a **KeyValuePair&lt;Object,Object&gt;** constraint.
 
 ### **ResourceDictionary** and Microsoft Visual Studio
 
@@ -196,7 +196,7 @@ For the implicit collection usage, the placeholder as appropriate for the proper
 
 ### Shareable types and UIElement types
 
-A resource dictionary is a technique for defining shareable types and values of these types in XAML. Not all types or values are suitable for usage from a ResourceDictionary. Examples of types where sharing is supported include [Style](style.md), any [FrameworkTemplate](frameworktemplate.md) subclass, the [XAML intrinsic data types](/windows/uwp/xaml-platform/xaml-intrinsic-data-types), brushes, colors, and transforms. For more info on which types are considered shareable, see [ResourceDictionary and XAML resource references](/windows/uwp/controls-and-patterns/resourcedictionary-and-xaml-resource-references). Generally, [UIElement](uielement.md)-derived types are not shareable unless they come from templates and application of a template on a specific control instance. Excluding the template case, a [UIElement](uielement.md) is expected to exist in only one place in an object tree after it is instantiated, and having a [UIElement](uielement.md) be shareable would potentially violate this principle.
+A resource dictionary is a technique for defining shareable types and values of these types in XAML. Not all types or values are suitable for usage from a ResourceDictionary. Examples of types where sharing is supported include [Style](style.md), any [FrameworkTemplate](frameworktemplate.md) subclass, the [XAML intrinsic data types](/windows/uwp/xaml-platform/xaml-intrinsic-data-types), brushes, colors, and transforms. For more info on which types are considered shareable, see [ResourceDictionary and XAML resource references](/windows/apps/design/style/xaml-resource-dictionary). Generally, [UIElement](uielement.md)-derived types are not shareable unless they come from templates and application of a template on a specific control instance. Excluding the template case, a [UIElement](uielement.md) is expected to exist in only one place in an object tree after it is instantiated, and having a [UIElement](uielement.md) be shareable would potentially violate this principle.
 
 
 In practice, the vast majority of the resources defined in a ResourceDictionary will be one of these:
@@ -214,24 +214,25 @@ The API that your code uses to access the resources in a ResourceDictionary depe
 + For C# or Microsoft Visual Basic you use API that implement 
 [IDictionary&lt;TKey,TValue&gt;](/dotnet/api/system.collections.generic.idictionary-2?view=dotnet-uwp-10.0&preserve-view=true) and 
 [IEnumerable&lt;T&gt;](/dotnet/api/system.collections.generic.ienumerable-1?view=dotnet-uwp-10.0&preserve-view=true). For example, [TryGetValue](/dotnet/api/system.collections.generic.idictionary-2.trygetvalue?view=dotnet-uwp-10.0&preserve-view=true) or the [Item](/dotnet/api/system.collections.generic.idictionary-2.item?view=dotnet-uwp-10.0&preserve-view=true) indexer.
-+ For Visual C++ component extensions (C++/CX) you use API that implement [IMap<K,V>](../windows.foundation.collections/imap_2.md) and [IIterable<T>](../windows.foundation.collections/iiterable_1.md). For example, [Lookup](resourcedictionary_lookup_786690417.md).
++ For Visual C++ component extensions (C++/CX) you use API that implement [IMap<K,V>](../windows.foundation.collections/imap_2.md) and [IIterable&lt;T&gt;](../windows.foundation.collections/iiterable_1.md). For example, [Lookup](resourcedictionary_lookup_786690417.md).
 + API that aren't part of collection support, like [Source](resourcedictionary_source.md), are the same in all languages.
 
 
-For more info on how to use ResourceDictionary in code, see "Using a ResourceDictionary from code" section of [ResourceDictionary and XAML resource references](/windows/uwp/controls-and-patterns/resourcedictionary-and-xaml-resource-references).
+For more info on how to use ResourceDictionary in code, see "Using a ResourceDictionary from code" section of [ResourceDictionary and XAML resource references](/windows/apps/design/style/xaml-resource-dictionary).
 
 ### System resources
 
 Some theme resources reference system resource values as an underlying sub-value. A system resource is a special resource value that isn't found in any XAML resource dictionary. These values rely on behavior in Windows Runtime XAML support to forward values from the system itself, and represent them in a form that a XAML resource can reference. 
 <!--For a list of these values, see ...-->
 
-### Resource loading optimization in Windows 8.1
+### Notes for previous versions
+
+#### Resource loading optimization in Windows 8.1
 
 Starting with Windows 8.1, there's a resource loading optimization that's enabled by the app model and the Windows Runtime XAML parser. For Windows 8, the XAML parser loaded resources from app.xaml and created each of them as objects as part of startup. That wasn't very efficient if there were big dictionaries there. Also, those resources included the items that were needed by all three themes, and two of the three themes wouldn't even be active. Starting with Windows 8.1, the XAML parser only creates the resources when they're specifically requested. The request might come from other resources or from app or page XAML as each is loaded. This parser behavior minimizes the time it takes to read the app-level dictionary at startup time, and enables the first app page to load faster in most cases. Resources needed by other currently inactive themes are only loaded if that theme is chosen to become the active theme by the user. At that time, any resource where the [{ThemeResource} markup extension](/windows/uwp/xaml-platform/themeresource-markup-extension) was used for the request is recalculated based on the newly active theme.
 
-
 <!--The following remark is relevant for Windows 8 > 8.1 migration. See WBB 454546-->
-### Windows 8 behavior
+#### Windows 8 behavior
 
 Windows 8 didn't have the optimizations described above. The ResourceDictionary for `Application.Resources` had to finish parsing before any page other than the splash screen could load into the app's [Window](window.md). Because of this you might see some differences in timing when you retarget your app for Windows 8.1. The app should be loading faster, however it may not be possible to isolate this improvement versus other changes you've made to your app code as part of retargeting. Some of the places where you might see evidence of timing changes due to optimized resource loading include when the constructors are called by the parser, for objects like [Application](application.md) objects, converters, or other custom classes. Apps that were compiled for Windows 8 but running on Windows 8.1 continue to use the Windows 8 behavior.
 
@@ -240,4 +241,4 @@ For more info on performance and XAML resource factoring, see [Optimize your XAM
 ## -examples
 
 ## -see-also
-[ResourceDictionary and XAML resource references](/windows/uwp/controls-and-patterns/resourcedictionary-and-xaml-resource-references), [Application resources and localization sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/ApplicationResources), [{ThemeResource} markup extension](/windows/uwp/xaml-platform/themeresource-markup-extension), [{StaticResource} markup extension](/windows/uwp/xaml-platform/staticresource-markup-extension), [x:Key attribute](/windows/uwp/xaml-platform/x-key-attribute)
+[ResourceDictionary and XAML resource references](/windows/apps/design/style/xaml-resource-dictionary), [Application resources and localization sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/ApplicationResources), [{ThemeResource} markup extension](/windows/uwp/xaml-platform/themeresource-markup-extension), [{StaticResource} markup extension](/windows/uwp/xaml-platform/staticresource-markup-extension), [x:Key attribute](/windows/uwp/xaml-platform/x-key-attribute)

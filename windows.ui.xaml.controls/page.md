@@ -12,7 +12,7 @@ public class Page : Windows.UI.Xaml.Controls.UserControl, Windows.UI.Xaml.Contro
 ## -description
 Represents content that a [Frame](frame.md) control can navigate to.
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.Controls.Page](/windows/winui/api/microsoft.ui.xaml.controls.page).
+
 
 ## -xaml-syntax
 ```xaml
@@ -168,7 +168,7 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 }
 ```
 
-For example code that adds an [AppBar](appbar.md) to a page, see [Quickstart: adding app bars](/previous-versions/windows/apps/hh781230(v=win.10)) or [How to share an app bar across pages](/previous-versions/windows/apps/jj150604(v=win.10)). For example code that uses [NavigationCacheMode](page_navigationcachemode.md), see [Navigation](/windows/uwp/layout/navigation-basics) or [XAML Navigation sample](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/XamlNavigation).
+For example code that adds an [AppBar](appbar.md) to a page, see [Quickstart: adding app bars](/previous-versions/windows/apps/hh781230(v=win.10)) or [How to share an app bar across pages](/previous-versions/windows/apps/jj150604(v=win.10)). For example code that uses [NavigationCacheMode](page_navigationcachemode.md), see [Navigation](/windows/uwp/layout/navigation-basics).
 
 ## -see-also
-[Frame](frame.md), [UserControl](usercontrol.md), [Quickstart: adding app bars](/previous-versions/windows/apps/hh781230(v=win.10)), [Navigation design basics overview](/windows/uwp/design/basics/navigation-basics), [XAML Navigation sample](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/XamlNavigation)
+[Frame](frame.md), [UserControl](usercontrol.md), [Quickstart: adding app bars](/previous-versions/windows/apps/hh781230(v=win.10)), [Navigation design basics overview](/windows/uwp/design/basics/navigation-basics)

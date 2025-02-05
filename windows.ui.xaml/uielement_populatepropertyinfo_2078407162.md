@@ -14,7 +14,7 @@ public void UIElement.PopulatePropertyInfo(String propertyName, AnimationPropert
 
 Defines a property that can be animated.
 
-Equivalent WinUI method: [Microsoft.UI.Xaml.UIElement.PopulatePropertyInfo](/windows/winui/api/microsoft.ui.xaml.uielement.populatepropertyinfo).
+
 
 ## -parameters
 ### -param propertyName
@@ -29,7 +29,7 @@ Information about the property to be animated.
 
 ## -see-also
 
-[UIElement.StartAnimation](uielement_startanimation_466567403.md)
+[UIElement.StartAnimation](uielement_startanimation_1375408558.md)
 
 ## -examples
 

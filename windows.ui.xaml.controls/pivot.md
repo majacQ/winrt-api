@@ -13,7 +13,6 @@ public class Pivot : Windows.UI.Xaml.Controls.ItemsControl, Windows.UI.Xaml.Cont
 
 Represents a control that provides quick navigation of views within an app.
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.Controls.Pivot](/windows/winui/api/microsoft.ui.xaml.controls.pivot).
 
 ## -xaml-syntax
 
@@ -44,35 +43,14 @@ You can use the [LeftHeader](pivot_leftheader.md) and [RightHeader](pivot_righth
 
 ### Control style and template
 
-You can modify the default [Style](../windows.ui.xaml/style.md) and [ControlTemplate](controltemplate.md) to give the control a unique appearance. For information about modifying a control's style and template, see [Styling controls](/windows/uwp/controls-and-patterns/styling-controls). The default style, template, and resources that define the look of the control are included in the generic.xaml file. For design purposes, generic.xaml is available in the \(Program Files)\Windows Kits\10\DesignTime\CommonConfiguration\Neutral\UAP\ &lt;SDK version&gt;\Generic folder from a Windows Software Development Kit (SDK) installation. Styles and resources from different versions of the SDK might have different values.
+You can modify the default [Style](../windows.ui.xaml/style.md) and [ControlTemplate](controltemplate.md) to give the control a unique appearance. For information about modifying a control's style and template, see [Styling controls](/windows/uwp/controls-and-patterns/styling-controls). The default style, template, and resources that define the look of the control are included in the `generic.xaml` file. For design purposes, `generic.xaml` is available locally with the SDK or NuGet package installation.
 
-Starting in Windows 10, version 1607 (SDK 14393), generic.xaml includes resources that you can use to modify the colors of a control in different visual states without modifying the control template. In apps that target this software development kit (SDK) or later, modifying these resources is preferred to setting properties such as [Background](control_background.md) and [Foreground](control_foreground.md). For more info, see the [Light-weight styling](/windows/uwp/controls-and-patterns/styling-controls) section of the [Styling controls](/windows/uwp/controls-and-patterns/styling-controls) article.
+- **[WinUI Styles (recommended)](/windows/apps/design/style/xaml-styles#winui-and-styles):** For updated styles from WinUI, see `\Users\<username>\.nuget\packages\microsoft.ui.xaml\<version>\lib\uap10.0\Microsoft.UI.Xaml\Themes\generic.xaml`.
+- **Non-WinUI styles:** For built-in styles, see `%ProgramFiles(x86)%\Windows Kits\10\DesignTime\CommonConfiguration\Neutral\UAP\<SDK version>\Generic\generic.xaml`.
 
-This table shows the resources used by the Pivot control.
+Locations might be different if you customized the installation. Styles and resources from different versions of the SDK might have different values.
 
-<table>
-   <tr><th>Resource key</th><th>Description</th></tr>
-   <tr><td>PivotBackground</td><td>Control background color</td></tr>
-   <tr><td>PivotHeaderBackground</td><td>Header background color</td></tr>
-   <tr><td>PivotNextButtonForeground</td><td>Button icon color at rest</td></tr>
-   <tr><td>PivotNextButtonForegroundPointerOver</td><td>Button icon color on hover</td></tr>
-   <tr><td>PivotNextButtonForegroundPressed</td><td>Button icon color when pressed</td></tr>
-   <tr><td>PivotNextButtonBackground</td><td>Button background color at rest</td></tr>
-   <tr><td>PivotNextButtonBackgroundPointerOver</td><td>Button background color on hover</td></tr>
-   <tr><td>PivotNextButtonBackgroundPressed</td><td>Button background color when pressed</td></tr>
-   <tr><td>PivotNextButtonBorderBrush</td><td>Button border color at rest</td></tr>
-   <tr><td>PivotNextButtonBorderBrushPointerOver</td><td>Button border color on hover</td></tr>
-   <tr><td>PivotNextButtonBorderBrushPressed</td><td>Button border color when pressed</td></tr>
-   <tr><td>PivotPreviousButtonForeground</td><td>Button icon color at rest</td></tr>
-   <tr><td>PivotPreviousButtonForegroundPointerOver</td><td>Button icon color on hover</td></tr>
-   <tr><td>PivotPreviousButtonForegroundPressed</td><td>Button icon color when pressed</td></tr>
-   <tr><td>PivotPreviousButtonBackground</td><td>Button background color at rest</td></tr>
-   <tr><td>PivotPreviousButtonBackgroundPointerOver</td><td>Button background color on hover</td></tr>
-   <tr><td>PivotPreviousButtonBackgroundPressed</td><td>Button background color when pressed</td></tr>
-   <tr><td>PivotPreviousButtonBorderBrush</td><td>Button border color at rest</td></tr>
-   <tr><td>PivotPreviousButtonBorderBrushPointerOver</td><td>Button border color on hover</td></tr>
-   <tr><td>PivotPreviousButtonBorderBrushPressed</td><td>Button border color when pressed</td></tr>
-</table>
+XAML also includes resources that you can use to modify the colors of a control in different visual states without modifying the control template. Modifying these resources is preferred to setting properties such as [Background](control_background.md) and [Foreground](control_foreground.md). For more info, see the [Light-weight styling](/windows/apps/design/style/xaml-styles#lightweight-styling) section of the [XAML styles](/windows/apps/design/style/xaml-styles) article. Light-weight styling resources are available starting in Windows 10, version 1607 (SDK 14393).
 
 ### XAML attached properties
 
@@ -82,7 +60,7 @@ In order to support XAML processor access to the attached properties, and also t
 
 | Attached property | Description |
 | - | - |
-| SlideInAnimationGroup | Gets or sets the slide-in animation group of a child element in a Pivot container.<ul><li>Type: [PivotSlideInAnimationGroup](pivotslideinanimationgroup.md)</li><li>Identifier field: <a href="/uwp/api/windows.ui.xaml.controls.pivot.slideinanimationgroupproperty">SlideInAnimationGroupProperty</a></li><li>Accessor methods: <a href="/uwp/api/windows.ui.xaml.controls.pivot.getslideinanimationgroup">GetSlideInAnimationGroup</a>, <a href="/uwp/api/windows.ui.xaml.controls.pivot.setslideinanimationgroup">SetSlideInAnimationGroup</a></li></ul> |
+| [SlideInAnimationGroup](pivot_slideinanimationgroup.md) | Gets or sets the slide-in animation group of a child element in a Pivot container. |
 
 ### Version history
 
@@ -94,13 +72,12 @@ In order to support XAML processor access to the attached properties, and also t
 ## -examples
 
 > [!TIP]
-> For more info, design guidance, and code examples, see [Pivot](/windows/uwp/design/controls-and-patterns/pivot).
->
-> If you have the **XAML Controls Gallery** app installed, click here to [open the app and see the Pivot in action](xamlcontrolsgallery:/item/Pivot).
-> + [Get the XAML Controls Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
-> + [Get the source code (GitHub)](https://github.com/Microsoft/Xaml-Controls-Gallery)
+> For more info, design guidance, and code examples, see [Pivot](/windows/apps/design/controls/pivot).
 
-For more examples, see the [Pivot sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/XamlPivot).
+> [!div class="nextstepaction"]
+> [Open the WinUI 2 Gallery app and see the Pivot in action](winui2gallery:/item/Pivot)
+
+> The **WinUI 2 Gallery** app includes interactive examples of most WinUI 2 controls, features, and functionality. Get the app from the [Microsoft Store](https://www.microsoft.com/store/productId/9MSVH128X2ZT) or get the source code on [GitHub](https://github.com/Microsoft/WinUI-Gallery/tree/winui2).
 
 This example shows a Pivot with 3 items. It also has a [RightHeader](pivot_rightheader.md) with forward and back buttons that use [SelectedIndex](pivot_selectedindex.md) to let a user navigate through the items.
 

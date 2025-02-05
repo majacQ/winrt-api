@@ -13,16 +13,16 @@ public class SyndicationPerson : Windows.Web.Syndication.ISyndicationNode, Windo
 Represents an author or contributor of syndication content.
 
 ## -remarks
+
 The following table maps SyndicationPerson properties to RSS and Atom feed elements.
 
-<table>
-   <tr><th>SyndicationPerson</th><th>RSS</th><th>Atom</th></tr>
-   <tr><td>[Email](syndicationperson_email.md)</td><td>(node value)</td><td>email</td></tr>
-   <tr><td>[Name](syndicationperson_name.md)</td><td /><td>name</td></tr>
-   <tr><td>[Uri](syndicationperson_uri.md)</td><td /><td>uri</td></tr>
-</table>
+| SyndicationPerson | RSS | Atom |
+|---|---|---|
+| [Email](syndicationperson_email.md) | (node value) | email |
+| [Name](syndicationperson_name.md) |---| name |
+| [Uri](syndicationperson_uri.md) |---| uri |
 
 ## -examples
 
 ## -see-also
-[Quickstart: Accessing a web feed](/previous-versions/windows/apps/hh700374(v=win.10)), [Syndication sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/%5BC%23%5D-Windows%208.1%20Store%20app%20samples/Syndication%20sample/C%23), [AtomPub sample](/samples/browse/)
+[Quickstart: Accessing a web feed](/previous-versions/windows/apps/hh700374(v=win.10)), [Syndication sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/Syndication%20sample), [AtomPub sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/AtomPub%20sample)

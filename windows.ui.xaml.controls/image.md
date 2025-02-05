@@ -13,7 +13,6 @@ public class Image : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.
 
 Represents a control that displays an image. The image source is specified by referring to an image file, using several supported formats. The image source can also be set with a stream. See Remarks for the list of supported image source formats.
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.Controls.Image](/windows/winui/api/microsoft.ui.xaml.controls.image).
 
 ## -xaml-syntax
 
@@ -205,11 +204,12 @@ Apps that were compiled for Windows 8 but running on Windows 8.1 continue to u
 ## -examples
 
 > [!TIP]
-> For more info, design guidance, and code examples, see [Images and image brushes](/windows/uwp/design/controls-and-patterns/images-imagebrushes).
->
-> If you have the **XAML Controls Gallery** app installed, click here to [open the app and see the Image in action](xamlcontrolsgallery:/item/Image).
-> + [Get the XAML Controls Gallery app (Microsoft Store)](https://www.microsoft.com/p/xaml-controls-gallery/9msvh128x2zt)
-> + [Get the source code (GitHub)](https://github.com/Microsoft/Xaml-Controls-Gallery)
+> For more info, design guidance, and code examples, see [Image](/windows/apps/design/controls/images-imagebrushes).
+
+> [!div class="nextstepaction"]
+> [Open the WinUI 2 Gallery app and see the Image in action](winui2gallery:/item/Image)
+
+> The **WinUI 2 Gallery** app includes interactive examples of most WinUI 2 controls, features, and functionality. Get the app from the [Microsoft Store](https://www.microsoft.com/store/productId/9MSVH128X2ZT) or get the source code on [GitHub](https://github.com/Microsoft/WinUI-Gallery/tree/winui2).
 
 ## -see-also
 

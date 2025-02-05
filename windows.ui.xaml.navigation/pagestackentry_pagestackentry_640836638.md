@@ -12,7 +12,6 @@ public PageStackEntry(Windows.UI.Xaml.Interop.TypeName sourcePageType, System.Ob
 ## -description
 Initializes a new instance of the [PageStackEntry](pagestackentry.md) class.
 
-Equivalent WinUI constructor: [Microsoft.UI.Xaml.Navigation.PageStackEntry.PageStackEntry](/windows/winui/api/microsoft.ui.xaml.navigation.pagestackentry.#ctor).
 
 ## -parameters
 ### -param sourcePageType
@@ -31,4 +30,4 @@ Info about the animated transition associated with the navigation entry.
 ## -examples
 
 ## -see-also
-[BackStack](../windows.ui.xaml.controls/frame_backstack.md), [ForwardStack](../windows.ui.xaml.controls/frame_forwardstack.md), [XAML Navigation sample](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/XamlNavigation)
+[BackStack](../windows.ui.xaml.controls/frame_backstack.md), [ForwardStack](../windows.ui.xaml.controls/frame_forwardstack.md)

@@ -15,7 +15,6 @@ Specifies the disambiguation strategy used for navigating between multiple candi
 > [!NOTE]
 > Other factors, such as the previously focused element or proximity to the axis of the navigation direction, can influence the navigation end result.
 
-Equivalent WinUI enum: [Microsoft.UI.Xaml.Input.XYFocusNavigationStrategy](/windows/winui/api/microsoft.ui.xaml.input.xyfocusnavigationstrategy).
 
 ## -enum-fields
 ### -field Auto:0
@@ -61,4 +60,4 @@ XY navigation is used to navigate a user interface (UI) with a gamepad, remote c
 
 ## -see-also
 
-[XYFocusNavigationStrategyOverride](xyfocusnavigationstrategyoverride.md), [Programmatic focus navigation](/windows/uwp/input-and-devices/focus-navigation-programmatic), [Desiging for Xbox - XY focus navigation and interaction](/windows/uwp/input-and-devices/designing-for-tv)
+[XYFocusNavigationStrategyOverride](xyfocusnavigationstrategyoverride.md), [Programmatic focus navigation](/windows/apps/design/input/focus-navigation-programmatic), [Desiging for Xbox - XY focus navigation and interaction](/windows/uwp/input-and-devices/designing-for-tv)

@@ -12,7 +12,7 @@ public class ListViewItem : Windows.UI.Xaml.Controls.Primitives.SelectorItem, Wi
 ## -description
 Represents the container for an item in a [ListView](listview.md) control.
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.Controls.ListViewItem](/windows/winui/api/microsoft.ui.xaml.controls.listviewitem).
+
 
 ## -xaml-syntax
 ```xaml
@@ -31,46 +31,24 @@ You can specify the look of the ListViewItem by setting the [ListView](listview.
 
 ### Control style and template
 
-You can modify the default [Style](../windows.ui.xaml/style.md) and [ControlTemplate](controltemplate.md) to give the control a unique appearance. For information about modifying a control's style and template, see [Styling controls](/windows/uwp/controls-and-patterns/styling-controls). The default style, template, and resources that define the look of the control are included in the generic.xaml file. For design purposes, generic.xaml is available in the \(Program Files)\Windows Kits\10\DesignTime\CommonConfiguration\Neutral\UAP\ &lt;SDK version&gt;\Generic folder from a Windows Software Development Kit (SDK) installation. Styles and resources from different versions of the SDK might have different values.
+You can modify the default [Style](../windows.ui.xaml/style.md) and [ControlTemplate](controltemplate.md) to give the control a unique appearance. For information about modifying a control's style and template, see [Styling controls](/windows/uwp/controls-and-patterns/styling-controls). The default style, template, and resources that define the look of the control are included in the `generic.xaml` file. For design purposes, `generic.xaml` is available locally with the SDK or NuGet package installation.
 
-If you style the control template, do not try to bind properties like [IsSelected](../windows.ui.xaml.controls.primitives/selectoritem_isselected.md) or [Background](control_background.md) properties on the ListViewItemPresenter, perhaps to implement your own selection binding system, since your binding may be replaced by the control's internal mechanism.
+- **[WinUI Styles (recommended)](/windows/apps/design/style/xaml-styles#winui-and-styles):** For updated styles from WinUI, see `\Users\<username>\.nuget\packages\microsoft.ui.xaml\<version>\lib\uap10.0\Microsoft.UI.Xaml\Themes\generic.xaml`.
+- **Non-WinUI styles:** For built-in styles, see `%ProgramFiles(x86)%\Windows Kits\10\DesignTime\CommonConfiguration\Neutral\UAP\<SDK version>\Generic\generic.xaml`.
 
-Starting in Windows 10, version 1607 (SDK 14393), generic.xaml includes resources that you can use to modify the colors of a control in different visual states without modifying the control template. In apps that target this software development kit (SDK) or later, modifying these resources is preferred to setting properties such as [Background](control_background.md) and [Foreground](control_foreground.md). For more info, see the [Light-weight styling](/windows/uwp/controls-and-patterns/styling-controls) section of the [Styling controls](/windows/uwp/controls-and-patterns/styling-controls) article.
+Locations might be different if you customized the installation. Styles and resources from different versions of the SDK might have different values.
 
-This table shows the resources used by the ListViewItem control.
+XAML also includes resources that you can use to modify the colors of a control in different visual states without modifying the control template. Modifying these resources is preferred to setting properties such as [Background](control_background.md) and [Foreground](control_foreground.md). For more info, see the [Light-weight styling](/windows/apps/design/style/xaml-styles#lightweight-styling) section of the [XAML styles](/windows/apps/design/style/xaml-styles) article. Light-weight styling resources are available starting in Windows 10, version 1607 (SDK 14393).
 
-<table>
-   <tr><th>Resource key</th><th>Description</th></tr>
-   <tr><td>ListViewItemForeground</td><td>Text color at rest</td></tr>
-   <tr><td>ListViewItemForegroundPointerOver</td><td>Text color on hover</td></tr>
-   <tr><td>ListViewItemForegroundPressed</td><td>Text color when pressed</td></tr>
-   <tr><td>ListViewItemBackground</td><td>Background color at rest</td></tr>
-   <tr><td>ListViewItemBackgroundPointerOver</td><td>Background color on hover</td></tr>
-   <tr><td>ListViewItemBackgroundPressed</td><td>Background color when pressed</td></tr>
-   <tr><td>ListViewItemBackgroundSelected</td><td>Background color when selected</td></tr>
-   <tr><td>ListViewItemBackgroundSelectedPointerOver</td><td>Background color on hover and selected</td></tr>
-   <tr><td>ListViewItemBackgroundSelectedPressed</td><td>Background color when pressed and selected</td></tr>
-   <tr><td>ListViewItemFocusVisualPrimaryBrush</td><td>Focus indicator color when focused</td></tr>
-   <tr><td>ListViewItemFocusVisualSecondaryBrush</td><td>Secondary focus indicator color when focused</td></tr>
-   <tr><td>ListViewItemFocusBorderBrush</td><td>Border color when focused</td></tr>
-   <tr><td>ListViewItemFocusSecondaryBorderBrush</td><td>Secondary border color when focused</td></tr>
-   <tr><td>ListViewItemCheckBrush</td><td>Check mark color on selected item</td></tr>
-   <tr><td>ListViewItemCheckBoxBrush</td><td>Checkmark box color on selected item</td></tr>
-   <tr><td>ListViewItemDragBackground</td><td>Item background color when being dragged</td></tr>
-   <tr><td>ListViewItemDragForeground</td><td>Item foreground color when being dragged</td></tr>
-   <tr><td>ListViewItemPlaceholderBackground</td><td>Background color of item placeholder</td></tr>
-   <tr><td>ListViewItemSelectionCheckMarkVisualEnabled</td><td>Boolean that specifies whether checkmark visual is shown</td></tr>
-   <tr><td>ListViewItemCheckMode</td><td>Specifies how checkmark is shown ("Overlay" or "Inline")</td></tr>
-</table>
 
 > **Windows 8.1**
-> To assign a custom value based on the data item to the [AutomationProperties.Name](/uwp/api/windows.ui.xaml.automation.automationproperties#xaml-attached-properties) attached property, you must bind to the item container's [Content](contentcontrol_content.md) property. For example, assume you have a `Customer` data item that has a `Name` property and you want to use the `Customer.Name` property as the [AutomationProperties.Name](/uwp/api/windows.ui.xaml.automation.automationproperties#xaml-attached-properties) value.
+> To assign a custom value based on the data item to the [AutomationProperties.Name](/uwp/api/windows.ui.xaml.automation.automationproperties.name) attached property, you must bind to the item container's [Content](contentcontrol_content.md) property. For example, assume you have a `Customer` data item that has a `Name` property and you want to use the `Customer.Name` property as the [AutomationProperties.Name](/uwp/api/windows.ui.xaml.automation.automationproperties.name) value.
 
 In Windows 8, the data item is set as the [DataContext](../windows.ui.xaml/frameworkelement_datacontext.md) of the item container, so you can use a binding like this: `AutomationProperties.Name="{Binding Name}"`.
 
-In Windows 8.1, the item container's [DataContext](../windows.ui.xaml/frameworkelement_datacontext.md) is not set. To bind the [AutomationProperties.Name](/uwp/api/windows.ui.xaml.automation.automationproperties#xaml-attached-properties) value to the data item's `Name` property, use a binding like this: `AutomationProperties.Name="{Binding Path=Content.Name,RelativeSource={RelativeSource Mode=Self}}"`.
+In Windows 8.1, the item container's [DataContext](../windows.ui.xaml/frameworkelement_datacontext.md) is not set. To bind the [AutomationProperties.Name](/uwp/api/windows.ui.xaml.automation.automationproperties.name) value to the data item's `Name` property, use a binding like this: `AutomationProperties.Name="{Binding Path=Content.Name,RelativeSource={RelativeSource Mode=Self}}"`.
 
 ## -examples
 
 ## -see-also
-[SelectorItem](../windows.ui.xaml.controls.primitives/selectoritem.md), [ListView](listview.md), [ItemContainerStyle](itemscontrol_itemcontainerstyle.md), [ListViewItem styles and templates](/windows/uwp/design/controls-and-patterns/xaml-styles), [Item templates for ListView](/windows/uwp/controls-and-patterns/item-templates-listview)
+[SelectorItem](../windows.ui.xaml.controls.primitives/selectoritem.md), [ListView](listview.md), [ItemContainerStyle](itemscontrol_itemcontainerstyle.md), [Item templates for ListView](/windows/uwp/controls-and-patterns/item-templates-listview)

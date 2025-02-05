@@ -12,7 +12,7 @@ public class CommonNavigationTransitionInfo : Windows.UI.Xaml.Media.Animation.Na
 ## -description
 Provides common parameters for navigation transition animations.
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.Media.Animation.CommonNavigationTransitionInfo](/windows/winui/api/microsoft.ui.xaml.media.animation.commonnavigationtransitioninfo).
+
 
 ## -xaml-syntax
 ```xaml
@@ -32,7 +32,7 @@ In order to support XAML processor access to the attached properties, and also t
 
 | Attached property | Description |
 | - | - |
-| IsStaggerElement | Gets or sets a value that indicates whether this element is the stagger element for the navigation transition.<ul><li>Type: Boolean</li><li>Identifier field: <a href="/uwp/api/windows.ui.xaml.media.animation.commonnavigationtransitioninfo.isstaggerelementproperty">IsStaggerElementProperty</a></li><li>Accessor methods: <a href="/uwp/api/windows.ui.xaml.media.animation.commonnavigationtransitioninfo.getisstaggerelement">GetIsStaggerElement</a>, <a href="/uwp/api/windows.ui.xaml.media.animation.commonnavigationtransitioninfo.setisstaggerelement">SetIsStaggerElement</a></li></ul>
+| [IsStaggerElement](commonnavigationtransitioninfo_isstaggerelement.md) | Gets or sets a value that indicates whether this element is the stagger element for the navigation transition. |
 
 ## -examples
 

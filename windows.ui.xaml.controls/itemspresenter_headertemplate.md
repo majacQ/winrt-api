@@ -12,7 +12,7 @@ public Windows.UI.Xaml.DataTemplate HeaderTemplate { get;  set; }
 ## -description
 Gets or sets the [DataTemplate](../windows.ui.xaml/datatemplate.md) used to display the content of the items header.
 
-Equivalent WinUI property: [Microsoft.UI.Xaml.Controls.ItemsPresenter.HeaderTemplate](/windows/winui/api/microsoft.ui.xaml.controls.itemspresenter.headertemplate).
+
 
 ## -xaml-syntax
 ```xaml
@@ -34,9 +34,13 @@ Equivalent WinUI property: [Microsoft.UI.Xaml.Controls.ItemsPresenter.HeaderTemp
 The template that specifies the visualization of the header object. The default is **null**.
 
 ## -remarks
-<!--Windows Blue bug 454690-->
-> **Windows 8.1**
-> Header alignment is handled differently in apps compiled for Windows 8 than in apps compiled for Windows 8.1.+ In an app compiled for Windows 8, the header is always left-aligned when the orientation of the items is **Horizontal**, or top-aligned when the orientation is **Vertical**. [VerticalAlignment](../windows.ui.xaml/frameworkelement_verticalalignment.md) and [HorizontalAlignment](../windows.ui.xaml/frameworkelement_horizontalalignment.md) values that you set are ignored.
+
+### Notes for previous versions
+
+> **Windows 8.x**
+> Header alignment is handled differently in apps compiled for Windows 8 than in apps compiled for Windows 8.1.
+
++ In an app compiled for Windows 8, the header is always left-aligned when the orientation of the items is **Horizontal**, or top-aligned when the orientation is **Vertical**. [VerticalAlignment](../windows.ui.xaml/frameworkelement_verticalalignment.md) and [HorizontalAlignment](../windows.ui.xaml/frameworkelement_horizontalalignment.md) values that you set are ignored.
 + In an app compiled for Windows 8.1, you can specify the header alignment. [VerticalAlignment](../windows.ui.xaml/frameworkelement_verticalalignment.md) and [HorizontalAlignment](../windows.ui.xaml/frameworkelement_horizontalalignment.md) values that you set are not ignored.
 
 

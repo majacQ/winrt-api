@@ -15,17 +15,16 @@ Represents a link within a syndication feed or item. This class encapsulates inf
 ## -remarks
 The following table maps SyndicationLink properties to RSS and Atom feed elements.
 
-<table>
-   <tr><th>SyndicationLink</th><th>RSS</th><th>Atom</th></tr>
-   <tr><td>[Length](syndicationlink_length.md)</td><td /><td>length (attribute)</td></tr>
-   <tr><td>[MediaType](syndicationlink_mediatype.md)</td><td /><td>type (attribute)</td></tr>
-   <tr><td>[Relationship](syndicationlink_relationship.md)</td><td /><td>rel (attribute)</td></tr>
-   <tr><td>[Title](syndicationlink_title.md)</td><td /><td>title (attribute)</td></tr>
-   <tr><td>[Uri](syndicationlink_uri.md)</td><td>(node value)</td><td>href (attribute)</td></tr>
-   <tr><td>[ResourceLanguage](syndicationlink_resourcelanguage.md)</td><td /><td>hreflang (attribute)</td></tr>
-</table>
+| SyndicationLink | RSS | Atom |
+|---|---|---|
+| [Length](syndicationlink_length.md) | length (attribute) |
+| [MediaType](syndicationlink_mediatype.md) | type (attribute) |
+| [Relationship](syndicationlink_relationship.md) | rel (attribute) |
+| [Title](syndicationlink_title.md) | title (attribute) |
+| [Uri](syndicationlink_uri.md) | (node value) | href (attribute) |
+| [ResourceLanguage](syndicationlink_resourcelanguage.md) | hreflang (attribute) |
 
 ## -examples
 
 ## -see-also
-[Quickstart: Accessing a web feed](/previous-versions/windows/apps/hh700374(v=win.10)), [Syndication sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/%5BC%23%5D-Windows%208.1%20Store%20app%20samples/Syndication%20sample/C%23), [AtomPub sample](/samples/browse/)
+[Quickstart: Accessing a web feed](/previous-versions/windows/apps/hh700374(v=win.10)), [Syndication sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/Syndication%20sample), [AtomPub sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208.1%20Store%20app%20samples/99866-Windows%208.1%20Store%20app%20samples/AtomPub%20sample)

@@ -12,7 +12,7 @@ public Windows.UI.Composition.CompositionDrawingSurface CreateDrawingSurface(Win
 ## -description
 Creates an instance of [CompositionDrawingSurface](compositiondrawingsurface.md).
 
-Equivalent WinUI method: [Microsoft.UI.Composition.CompositionGraphicsDevice.CreateDrawingSurface](/windows/winui/api/microsoft.ui.composition.compositiongraphicsdevice.createdrawingsurface).
+
 
 ## -parameters
 ### -param sizePixels
@@ -28,6 +28,7 @@ How the alpha channel should be handled.
 The created [CompositionDrawingSurface](compositiondrawingsurface.md).
 
 ## -remarks
+If the requested pixel format is unsupported by the graphics device, an exception will be thrown.
 
 ## -examples
 

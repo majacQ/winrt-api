@@ -12,7 +12,7 @@ public bool HidesIfEmpty { get;  set; }
 ## -description
 Gets or sets a value that indicates whether items corresponding to empty groups should be displayed.
 
-Equivalent WinUI property: [Microsoft.UI.Xaml.Controls.GroupStyle.HidesIfEmpty](/windows/winui/api/microsoft.ui.xaml.controls.groupstyle.hidesifempty).
+
 
 ## -xaml-syntax
 ```xaml
@@ -28,4 +28,3 @@ Equivalent WinUI property: [Microsoft.UI.Xaml.Controls.GroupStyle.HidesIfEmpty](
 ## -examples
 
 ## -see-also
-[How to group items in a list or grid](/previous-versions/windows/apps/hh780627(v=win.10))

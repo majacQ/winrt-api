@@ -12,7 +12,6 @@ public bool AutoPlay { get;  set; }
 ## -description
 Gets or sets a value that indicates whether media will begin playback automatically when the [Source](mediaplayerelement_source.md) property is set.
 
-Equivalent WinUI property: [Microsoft.UI.Xaml.Controls.MediaPlayerElement.AutoPlay](/windows/winui/api/microsoft.ui.xaml.controls.mediaplayerelement.autoplay).
 
 ## -xaml-syntax
 ```xaml
@@ -21,7 +20,7 @@ Equivalent WinUI property: [Microsoft.UI.Xaml.Controls.MediaPlayerElement.AutoPl
 
 
 ## -property-value
-**true** if playback is automatic; otherwise, **false**. The default is **true**.
+**true** if playback is automatic; otherwise, **false**. The default is **false**.
 
 ## -remarks
 

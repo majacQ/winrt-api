@@ -12,7 +12,7 @@ public Windows.UI.Xaml.GridLength Width { get;  set; }
 ## -description
 Gets the calculated width of a [ColumnDefinition](columndefinition.md) element, or sets the [GridLength](../windows.ui.xaml/gridlength.md) value of a column that is defined by the [ColumnDefinition](columndefinition.md).
 
-Equivalent WinUI property: [Microsoft.UI.Xaml.Controls.ColumnDefinition.Width](/windows/winui/api/microsoft.ui.xaml.controls.columndefinition.width).
+
 
 ## -xaml-syntax
 ```xaml
@@ -42,4 +42,4 @@ It's more common to use **Star** sizing than absolute pixel values for a [Grid](
 ## -examples
 
 ## -see-also
-[Grid](grid.md), [Grid.ColumnDefinitions](grid_columndefinitions.md), [Grid.Column](/uwp/api/windows.ui.xaml.controls.grid#xaml-attached-properties), [Define layouts with XAML](/windows/uwp/layout/layouts-with-xaml)
+[Grid](grid.md), [Grid.ColumnDefinitions](grid_columndefinitions.md), [Grid.Column](/uwp/api/windows.ui.xaml.controls.grid.column), [Define layouts with XAML](/windows/uwp/layout/layouts-with-xaml)

@@ -13,7 +13,6 @@ public class TextBox : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Control
 
 Represents a control that can be used to display and edit plain text (single or multi-line).
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.Controls.TextBox](/windows/winui/api/microsoft.ui.xaml.controls.textbox).
 
 ## -xaml-syntax
 
@@ -145,7 +144,7 @@ The resulting TextBox looks like this.
 
 ### Pen input
 
-Starting with Windows 10, version 1803, XAML text input boxes feature embedded support for pen input using [Windows Ink](../input/pen-and-stylus-interactions.md). When a user taps into a text input box using a Windows pen, the text box transforms to let the user write directly into it with a pen, rather than opening a separate input panel.
+Starting with Windows 10, version 1803, XAML text input boxes feature embedded support for pen input using [Windows Ink](/windows/uwp/input-and-devices/pen-and-stylus-interactions). When a user taps into a text input box using a Windows pen, the text box transforms to let the user write directly into it with a pen, rather than opening a separate input panel.
 
 <img src="images/controls/handwritingview-inksuggestion1.gif" alt="Text box with ink and suggestions" />
 
@@ -162,7 +161,7 @@ By default, the commands shown in the TextBox context menu depend on the state o
    <tr><td>Undo</td><td>text has been changed.</td></tr>
 </table>
 
-To modify the commands shown in the context menu, handle the [ContextMenuOpening](textbox_contextmenuopening.md) event. For an example of this, see the **Customizing RichEditBox's CommandBarFlyout - adding 'Share'** example in the <a href="xamlcontrolsgallery:/item/RichEditBox">XAML Controls Gallery</a>. For design info, see [Guidelines for context menus](/windows/uwp/design/controls-and-patterns/menus).
+To modify the commands shown in the context menu, handle the [ContextMenuOpening](textbox_contextmenuopening.md) event. For an example of this, see the **Customizing RichEditBox's CommandBarFlyout - adding 'Share'** example in the <a href="winui2gallery:/item/RichEditBox">WinUI 2 Gallery</a>. For design info, see [Guidelines for context menus](/windows/uwp/design/controls-and-patterns/menus).
 
 ### Selection, copy, and paste
 
@@ -178,43 +177,16 @@ Other properties that affect the touch keyboard are [IsSpellCheckEnabled](textbo
 
 ### Control style and template
 
-You can modify the default [Style](../windows.ui.xaml/style.md) and [ControlTemplate](controltemplate.md) to give the control a unique appearance. For information about modifying a control's style and template, see [Styling controls](/windows/uwp/controls-and-patterns/styling-controls). The default style, template, and resources that define the look of the control are included in the generic.xaml file. For design purposes, generic.xaml is available in the \(Program Files)\Windows Kits\10\DesignTime\CommonConfiguration\Neutral\UAP\ &lt;SDK version&gt;\Generic folder from a Windows Software Development Kit (SDK) installation. Styles and resources from different versions of the SDK might have different values.
+You can modify the default [Style](../windows.ui.xaml/style.md) and [ControlTemplate](controltemplate.md) to give the control a unique appearance. For information about modifying a control's style and template, see [Styling controls](/windows/uwp/controls-and-patterns/styling-controls). The default style, template, and resources that define the look of the control are included in the `generic.xaml` file. For design purposes, `generic.xaml` is available locally with the SDK or NuGet package installation.
 
-Starting in Windows 10, version 1607 (SDK 14393), generic.xaml includes resources that you can use to modify the colors of a control in different visual states without modifying the control template. In apps that target this software development kit (SDK) or later, modifying these resources is preferred to setting properties such as [Background](control_background.md) and [Foreground](control_foreground.md). For more info, see the [Light-weight styling](/windows/uwp/controls-and-patterns/styling-controls) section of the [Styling controls](/windows/uwp/controls-and-patterns/styling-controls) article.
+- **[WinUI Styles (recommended)](/windows/apps/design/style/xaml-styles#winui-and-styles):** For updated styles from WinUI, see `\Users\<username>\.nuget\packages\microsoft.ui.xaml\<version>\lib\uap10.0\Microsoft.UI.Xaml\Themes\generic.xaml`.
+- **Non-WinUI styles:** For built-in styles, see `%ProgramFiles(x86)%\Windows Kits\10\DesignTime\CommonConfiguration\Neutral\UAP\<SDK version>\Generic\generic.xaml`.
 
-This table shows the resources used by the TextBox control. Resources that start with "TextControl" are shared by TextBox, [PasswordBox](passwordbox.md), [RichEditBox](richeditbox.md), and [AutoSuggestBox](autosuggestbox.md).
+Locations might be different if you customized the installation. Styles and resources from different versions of the SDK might have different values.
 
-<table>
-   <tr><th>Resource key</th><th>Description</th></tr>
-   <tr><td>TextControlForeground</td><td>Text color at rest and not focused</td></tr>
-   <tr><td>TextControlForegroundPointerOver</td><td>Text color on hover</td></tr>
-   <tr><td>TextControlForegroundFocused</td><td>Text color when focused</td></tr>
-   <tr><td>TextControlForegroundDisabled</td><td>Text color when disabled</td></tr>
-   <tr><td>TextControlBackground</td><td>Background color at rest and not focused</td></tr>
-   <tr><td>TextControlBackgroundPointerOver</td><td>Background color on hover</td></tr>
-   <tr><td>TextControlBackgroundFocused</td><td>Background color when focused</td></tr>
-   <tr><td>TextControlBackgroundDisabled</td><td>Background color when disabled</td></tr>
-   <tr><td>TextControlBorderBrush</td><td>Border color at rest and not focused</td></tr>
-   <tr><td>TextControlBorderBrushPointerOver</td><td>Border color on hover</td></tr>
-   <tr><td>TextControlBorderBrushFocused</td><td>Border color when focused</td></tr>
-   <tr><td>TextControlBorderBrushDisabled</td><td>Border color when disabled</td></tr>
-   <tr><td>TextControlPlaceholderForeground</td><td>Placeholder text color at rest and not focused</td></tr>
-   <tr><td>TextControlPlaceholderForegroundPointerOver</td><td>Placeholder text color on hover</td></tr>
-   <tr><td>TextControlPlaceholderForegroundFocused</td><td>Placeholder text color when focused</td></tr>
-   <tr><td>TextControlPlaceholderForegroundDisabled</td><td>Placeholder text color when disabled</td></tr>
-   <tr><td>TextControlHeaderForeground</td><td>Header text color</td></tr>
-   <tr><td>TextControlHeaderForegroundDisabled</td><td>Header text color when disabled</td></tr>
-   <tr><td>TextControlSelectionHighlightColor</td><td>Highlight color of selected text</td></tr>
-   <tr><td>TextControlButtonBackground</td><td>Background color of delete button at rest</td></tr>
-   <tr><td>TextControlButtonBackgroundPointerOver</td><td>Background color of delete button on hover</td></tr>
-   <tr><td>TextControlButtonBackgroundPressed</td><td>Background color of delete button when pressed</td></tr>
-   <tr><td>TextControlButtonBorderBrush</td><td>Border color of delete button at rest</td></tr>
-   <tr><td>TextControlButtonBorderBrushPointerOver</td><td>Border color of delete button on hover</td></tr>
-   <tr><td>TextControlButtonBorderBrushPressed</td><td>Border color of delete button when pressed</td></tr>
-   <tr><td>TextControlButtonForeground</td><td>Foreground color of delete button at rest</td></tr>
-   <tr><td>TextControlButtonForegroundPointerOver</td><td>Foreground color of delete button on hover</td></tr>
-   <tr><td>TextControlButtonForegroundPressed</td><td>Foreground color of delete button when pressed</td></tr>
-</table>
+XAML also includes resources that you can use to modify the colors of a control in different visual states without modifying the control template. Modifying these resources is preferred to setting properties such as [Background](control_background.md) and [Foreground](control_foreground.md). For more info, see the [Light-weight styling](/windows/apps/design/style/xaml-styles#lightweight-styling) section of the [XAML styles](/windows/apps/design/style/xaml-styles) article. Light-weight styling resources are available starting in Windows 10, version 1607 (SDK 14393).
+
+Resources that start with `TextControl` are shared by `TextBox`, [PasswordBox](passwordbox.md), [RichEditBox](richeditbox.md), and [AutoSuggestBox](autosuggestbox.md). Changes to these resources will affect all four controls.
 
 ### Version history
 
@@ -247,11 +219,12 @@ This table shows the resources used by the TextBox control. Resources that start
 ## -examples
 
 > [!TIP]
-> For more info, design guidance, and code examples, see [Text box](/windows/uwp/design/controls-and-patterns/text-box).
->
-> If you have the **XAML Controls Gallery** app installed, click here to [open the app and see the TextBox in action](xamlcontrolsgallery:/item/TextBox).
-> + [Get the XAML Controls Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
-> + [Get the source code (GitHub)](https://github.com/Microsoft/Xaml-Controls-Gallery)
+> For more info, design guidance, and code examples, see [Text box](/windows/apps/design/controls/text-box).
+
+> [!div class="nextstepaction"]
+> [Open the WinUI 2 Gallery app and see the TextBox in action](winui2gallery:/item/TextBox)
+
+> The **WinUI 2 Gallery** app includes interactive examples of most WinUI 2 controls, features, and functionality. Get the app from the [Microsoft Store](https://www.microsoft.com/store/productId/9MSVH128X2ZT) or get the source code on [GitHub](https://github.com/Microsoft/WinUI-Gallery/tree/winui2).
 
 This example shows a TextBox with a header and placeholder text. The [Text](textbox_text.md) from the TextBox is used to show a greeting to the user.
 

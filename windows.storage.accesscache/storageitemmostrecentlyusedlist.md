@@ -18,7 +18,7 @@ Use the most recently used (MRU) list to track files and/or locations that your 
 This list can store up to 25 items. While the app must add items to the MRU in order to track them, Windows maintains the 25-item limit by removing stale items if necessary.
 
 > [!NOTE]
-> If you want to respond to [ItemRemoved](storageitemmostrecentlyusedlist_itemremoved.md) events you must register your event handle every time you get a new reference to the StorageItemMostRecentlyUsedList.
+> If you want to respond to [ItemRemoved](storageitemmostrecentlyusedlist_itemremoved.md) events you must register your event handler every time you get a new reference to the StorageItemMostRecentlyUsedList.
 
 To see more code examples, see the [File picker sample](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/FilePicker) and the [File access sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/FileAccess).
 
@@ -42,6 +42,39 @@ if (file != null)
 else
 {
     // The file picker was dismissed with no file selected to save
+}
+```
+
+```cppwinrt
+#include <sstream>
+#include <winrt/Windows.Storage.h>
+#include <winrt/Windows.Storage.AccessCache.h>
+#include <winrt/Windows.Storage.Pickers.h>
+using namespace winrt;
+using namespace Windows::Storage::Pickers;
+using namespace Windows::Storage;
+...
+winrt::fire_and_forget AddToLists()
+{
+    FileSavePicker savePicker;
+    auto plainTextExtensions{ winrt::single_threaded_vector<winrt::hstring>() };
+    plainTextExtensions.Append(L".txt");
+    savePicker.FileTypeChoices().Insert(L"Plain Text", plainTextExtensions);
+    savePicker.SuggestedFileName(L"New Document");
+
+    StorageFile file{ co_await savePicker.PickSaveFileAsync() };
+    if (file)
+    {
+        // Add to MRU with metadata (For example, a string that represents the date)
+        winrt::hstring mruToken { Windows::Storage::AccessCache::StorageApplicationPermissions::MostRecentlyUsedList().Add(file, L"20120716") };
+
+        // Add to FA without metadata
+        winrt::hstring faToken { Windows::Storage::AccessCache::StorageApplicationPermissions::FutureAccessList().Add(file) };
+    }
+    else
+    {
+        // The file picker was dismissed with no file selected to save
+    }
 }
 ```
 

@@ -12,7 +12,7 @@ public class DataTemplate : Windows.UI.Xaml.FrameworkTemplate, Windows.UI.Xaml.I
 ## -description
 Describes the visual structure of a data object. Use data binding for specific elements in the template that display the data values.
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.DataTemplate](/windows/winui/api/microsoft.ui.xaml.datatemplate).
+
 
 ## -xaml-syntax
 ```xaml
@@ -53,7 +53,7 @@ In order to support XAML processor access to the attached properties, and also t
 
 | Attached property | Description |
 | - | - |
-| ExtensionInstance | Gets or sets an extension instance that defines helper methods for phased rendering of a data template.<ul><li>Type: <a href="/uwp/api/windows.ui.xaml.idatatemplateextension">IDataTemplateExtension</a></li><li>Identifier field: <a href="/uwp/api/windows.ui.xaml.datatemplate.extensioninstanceproperty">ExtensionInstanceProperty</a></li><li>Accessor methods: <a href="/uwp/api/windows.ui.xaml.datatemplate.getextensioninstance">GetExtensionInstance</a>, <a href="/uwp/api/windows.ui.xaml.datatemplate.setextensioninstance">SetExtensionInstance</a></li></ul> |
+| [ExtensionInstance](datatemplate_extensioninstance.md) | Gets or sets an extension instance that defines helper methods for phased rendering of a data template. |
 
 ### Version history
 
@@ -79,4 +79,4 @@ The following example uses a DataTemplate to display the items of a [ListBox](..
 [!code-vb[Snippet101_VB](../windows.ui.xaml.data/code/System.Windows.Controls.ListBoxEx/vbnet/Page.xaml.vb#Snippet101_VB)]
 
 ## -see-also
-[FrameworkTemplate](frameworktemplate.md), [ItemsControl.ItemTemplate](../windows.ui.xaml.controls/itemscontrol_itemtemplate.md), [ContentControl.ContentTemplate](../windows.ui.xaml.controls/contentcontrol_contenttemplate.md), [DataTemplateSelector](../windows.ui.xaml.controls/datatemplateselector.md), [Data binding in depth](/windows/uwp/data-binding/data-binding-in-depth), [ResourceDictionary and XAML resource references](/windows/uwp/controls-and-patterns/resourcedictionary-and-xaml-resource-references)
+[FrameworkTemplate](frameworktemplate.md), [ItemsControl.ItemTemplate](../windows.ui.xaml.controls/itemscontrol_itemtemplate.md), [ContentControl.ContentTemplate](../windows.ui.xaml.controls/contentcontrol_contenttemplate.md), [DataTemplateSelector](../windows.ui.xaml.controls/datatemplateselector.md), [Data binding in depth](/windows/uwp/data-binding/data-binding-in-depth), [ResourceDictionary and XAML resource references](/windows/apps/design/style/xaml-resource-dictionary)

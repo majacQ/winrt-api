@@ -12,7 +12,6 @@ public class FrameworkElement : Windows.UI.Xaml.UIElement, Windows.UI.Xaml.IFram
 ## -description
 Provides a base element class for Windows Runtime UI objects. FrameworkElement defines common API that support UI interaction and the automatic layout system. FrameworkElement  also defines API related to data binding, defining and examining the object tree, and tracking object lifetime.
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.FrameworkElement](/windows/winui/api/microsoft.ui.xaml.frameworkelement).
 
 ## -remarks
 FrameworkElement is a base element: it's a class that many other Windows Runtime classes inherit from in order to support the XAML UI element model. Properties, methods and events that FrameworkElement defines are inherited by hundreds of other Windows Runtime classes.
@@ -58,7 +57,7 @@ The FrameworkElement class defines the [Language](frameworkelement_language.md) 
 
 ### Style and theme support
 
-The FrameworkElement class defines the [Style](style.md) property and the [RequestedTheme](frameworkelement_requestedtheme.md) property. Also, the [Resources](frameworkelement_resources.md) property is used to define the page-level XAML resource dictionaries that typically define styles and templates, as well as other shared resources. For more info, see [Styling controls](/windows/uwp/controls-and-patterns/styling-controls) and [ResourceDictionary and XAML resource references](/windows/uwp/controls-and-patterns/resourcedictionary-and-xaml-resource-references).
+The FrameworkElement class defines the [Style](style.md) property and the [RequestedTheme](frameworkelement_requestedtheme.md) property. Also, the [Resources](frameworkelement_resources.md) property is used to define the page-level XAML resource dictionaries that typically define styles and templates, as well as other shared resources. For more info, see [Styling controls](/windows/uwp/controls-and-patterns/styling-controls) and [ResourceDictionary and XAML resource references](/windows/apps/design/style/xaml-resource-dictionary).
 <!--link for req theme?-->
 
 ### **FrameworkElement** dependency properties

@@ -12,7 +12,7 @@ public class PickerFlyoutBase : Windows.UI.Xaml.Controls.Primitives.FlyoutBase, 
 ## -description
 Represents a base class for picker controls.
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.Controls.Primitives.PickerFlyoutBase](/windows/winui/api/microsoft.ui.xaml.controls.primitives.pickerflyoutbase).
+
 
 ## -remarks
 
@@ -24,7 +24,7 @@ In order to support XAML processor access to the attached properties, and also t
 
 | Attached property | Description |
 | - | - |
-| Title | Gets or sets  the title for a picker flyout when it appears.<ul><li>Type: string</li><li>Identifier field: <a href="/uwp/api/windows.ui.xaml.controls.primitives.pickerflyoutbase.titleproperty">TitleProperty</a></li><li>Accessor methods: <a href="/uwp/api/windows.ui.xaml.controls.primitives.pickerflyoutbase.gettitle">GetTitle</a>, <a href="/uwp/api/windows.ui.xaml.controls.primitives.pickerflyoutbase.settitle">SetTitle</a></li></ul>|
+| [Title](pickerflyoutbase_title.md) | Gets or sets  the title for a picker flyout when it appears. |
 
 ## -examples
 

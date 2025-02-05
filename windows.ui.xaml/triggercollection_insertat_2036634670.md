@@ -12,7 +12,7 @@ public void InsertAt(System.UInt32 index, Windows.UI.Xaml.TriggerBase value)
 ## -description
 Inserts the specified item at the specified index.
 
-Equivalent WinUI method: [Microsoft.UI.Xaml.TriggerCollection.InsertAt](/windows/winui/api/microsoft.ui.xaml.triggercollection.insertat).
+
 
 ## -parameters
 ### -param index
@@ -23,7 +23,7 @@ The value to set.
 
 ## -remarks
 > [!NOTE]
-> The equivalent Microsoft .NET  API is [Insert](triggercollection_insert.md).
+> The equivalent Microsoft .NET API is [Insert](/dotnet/api/system.collections.objectmodel.collection-1.insert).
 
 ## -examples
 

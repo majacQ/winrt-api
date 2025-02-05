@@ -1,6 +1,7 @@
 ---
 -api-id: T:Windows.Media.Capture.MediaCapture
 -api-type: winrt class
+ms.custom: project-verbatim
 ---
 
 <!-- Class syntax.
@@ -75,13 +76,15 @@ The following code sample shows how to create and initialize a **MediaCapture** 
 
 [!code-csharp[MediaCaptureVideo_InitMCobject](../windows.media.capture/code/MediaCaptureVideo/csharp/MainPage.xaml.cs#SnippetMediaCaptureVideo_InitMCobjectCS)]
 
+For info about how to handle suspension, see [Handle app suspend](/windows/uwp/launch-resume/suspend-an-app).
+
 [!code-xaml[MediaCapturePreviewXAML](../windows.media.capture/code/MediaCapture/csharp/MainPage.xaml#SnippetMediaCapturePreviewXAML)]
 
 [!code-csharp[MediaCapturePreviewCode](../windows.media.capture/code/MediaCapture/csharp/MainPage.xaml.cs#SnippetMediaCapturePreviewCode)]
 
 ## -see-also
 
-[Camera](/windows/uwp/audio-video-camera/camera), [Basic photo, video, and audio capture with MediaCapture](/windows/uwp/audio-video-camera/basic-photo-video-and-audio-capture-with-mediacapture), [Media capture sample](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/CameraStarterKit), [Camera capture UI sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/CameraCaptureUI%20Sample%20(Windows%208)), [Camera options UI sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/CameraOptionsUI%20Sample%20(Windows%208)), [Device enumeration sample](/samples/browse/), [Real-Time communication sample](hhttps://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/Real-time%20communication%20sample%20(Windows%208)), [Media extension sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Media%20extensions%20sample), [Supported audio and video formats](/previous-versions/windows/apps/hh986969(v=win.10)), [Real-time communication sample (Windows 10)](https://go.microsoft.com/fwlink/p/?LinkId=620600), [Camera preview frame sample](https://github.com/Microsoft/Windows-universal-samples/tree/dev/Samples/CameraGetPreviewFrame), [Video stabilization sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CameraVideoStabilization), [Holographic Mixed Reality Capture sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicMixedRealityCapture)
+[Camera](/windows/uwp/audio-video-camera/camera), [Basic photo, video, and audio capture with MediaCapture](/windows/uwp/audio-video-camera/basic-photo-video-and-audio-capture-with-mediacapture), [Media capture sample](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/CameraStarterKit), [Camera capture UI sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/CameraCaptureUI%20Sample%20(Windows%208)), [Camera options UI sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/CameraOptionsUI%20Sample%20(Windows%208)), [Device enumeration sample](https://github.com/microsoft/Windows-universal-samples/tree/main/Samples/DeviceEnumerationAndPairing), [Real-Time communication sample](hhttps://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/Real-time%20communication%20sample%20(Windows%208)), [Media extension sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Media%20extensions%20sample), [Supported audio and video formats](/previous-versions/windows/apps/hh986969(v=win.10)), [Real-time communication sample (Windows 10)](https://go.microsoft.com/fwlink/p/?LinkId=620600), [Camera preview frame sample](https://github.com/Microsoft/Windows-universal-samples/tree/dev/Samples/CameraGetPreviewFrame), [Video stabilization sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CameraVideoStabilization), [Holographic Mixed Reality Capture sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicMixedRealityCapture)
 
 ## -capabilities
 

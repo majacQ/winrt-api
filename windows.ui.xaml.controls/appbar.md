@@ -13,7 +13,7 @@ public class AppBar : Windows.UI.Xaml.Controls.ContentControl, Windows.UI.Xaml.C
 
 Represents the container control that holds app UI components for commanding and experiences. For Windows 10, see Remarks.
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.Controls.AppBar](/windows/winui/api/microsoft.ui.xaml.controls.appbar).
+
 
 ## -xaml-syntax
 
@@ -32,7 +32,7 @@ Equivalent WinUI class: [Microsoft.UI.Xaml.Controls.AppBar](/windows/winui/api/m
 
 An app bar is a UI element that's typically used to present commands and tools to the user, but can also be used for navigation. An app bar can appear at the top of the page, at the bottom of the page, or both. By default, its shown in a minimal state. Its content is shown or hidden when the user presses the ellipsis [•••], or performs a right-click that is not otherwise handled by the app.
 
-Here's an app bar in it's minimal state.
+Here's an app bar in its minimal state.
 
 <img alt="A closed app bar control" src="images/AppBar_Closed_10.png" />
 
@@ -48,30 +48,9 @@ To add an app bar in Extensible Application Markup Language (XAML), you assign a
 
 ### Control style and template
 
-You can modify the default [Style](../windows.ui.xaml/style.md) and [ControlTemplate](controltemplate.md) to give the control a unique appearance. For information about modifying a control's style and template, see [Styling controls](/windows/uwp/controls-and-patterns/styling-controls). The default style, template, and resources that define the look of the control are included in the generic.xaml file. For design purposes, generic.xaml is available in the `%ProgramFiles(x86)%\Windows Kits\10\DesignTime\CommonConfiguration\Neutral\UAP\<SDK version>\Generic` folder from a Windows Software Development Kit (SDK) installation. Styles and resources from different versions of the SDK might have different values.
+You can modify the default [Style](../windows.ui.xaml/style.md) and [ControlTemplate](controltemplate.md) to give the control a unique appearance. For information about modifying a control's style and template, see [XAML styles](/windows/apps/design/style/xaml-styles). The default style, template, and resources that define the look of the control are included in the `generic.xaml` file. For design purposes, `generic.xaml` is available in the `\(Program Files)\Windows Kits\10\DesignTime\CommonConfiguration\Neutral\UAP\<SDK version>\Generic` folder from a Windows SDK installation. Styles and resources from different versions of the SDK might have different values.
 
-Starting in Windows 10, version 1607 (SDK 14393), generic.xaml includes resources that you can use to modify the colors of a control in different visual states without modifying the control template. In apps that target this software development kit (SDK) or later, modifying these resources is preferred to setting properties such as [Background](control_background.md) and [Foreground](control_foreground.md). For more info, see the [Light-weight styling](/windows/uwp/controls-and-patterns/styling-controls) section of the [Styling controls](/windows/uwp/controls-and-patterns/styling-controls) article.
-
-This table shows the resources used by the AppBar control.
-
-<table>
-   <tr><th>Resource key</th><th>Description</th></tr>
-   <tr><td>AppBarBackground</td><td>Background color at rest</td></tr>
-   <tr><td>AppBarForeground</td><td>Text color at rest</td></tr>
-   <tr><td>AppBarHighContrastBorder</td><td>Border color for high-contrast</td></tr>
-   <tr><td>AppBarEllipsisButtonBackground</td><td>Background color of ellipsis at rest</td></tr>
-   <tr><td>AppBarEllipsisButtonBackgroundPointerOver</td><td>Background color of ellipsis on hover</td></tr>
-   <tr><td>AppBarEllipsisButtonBackgroundPressed</td><td>Background color of ellipsis when pressed</td></tr>
-   <tr><td>AppBarEllipsisButtonBackgroundDisabled</td><td>Background color of ellipsis when disabled</td></tr>
-   <tr><td>AppBarEllipsisButtonForeground</td><td>Foreground color of ellipsis at rest</td></tr>
-   <tr><td>AppBarEllipsisButtonForegroundPointerOver</td><td>Foreground color of ellipsis on hover</td></tr>
-   <tr><td>AppBarEllipsisButtonForegroundPressed</td><td>Foreground color of ellipsis when pressed</td></tr>
-   <tr><td>AppBarEllipsisButtonForegroundDisabled</td><td>Foreground color of ellipsis when disabled</td></tr>
-   <tr><td>AppBarEllipsisButtonBorderBrush</td><td>Border color of ellipsis at rest</td></tr>
-   <tr><td>AppBarEllipsisButtonBorderBrushPointerOver</td><td>Border color of ellipsis on hover</td></tr>
-   <tr><td>AppBarEllipsisButtonBorderBrushPressed</td><td>Border color of ellipsis when pressed</td></tr>
-   <tr><td>AppBarEllipsisButtonBorderBrushDisabled</td><td>Border color of ellipsis when disabled</td></tr>
-</table>
+XAML also includes resources that you can use to modify the colors of a control in different visual states without modifying the control template. Modifying these resources is preferred to setting properties such as [Background](control_background.md) and [Foreground](control_foreground.md). For more info, see the [Light-weight styling](/windows/apps/design/style/xaml-styles#lightweight-styling) section of the [XAML styles](/windows/apps/design/style/xaml-styles) article. Light-weight styling resources are available starting in Windows 10, version 1607 (SDK 14393).
 
 ### Version history
 
@@ -106,4 +85,4 @@ This example shows a top app bar with a group of navigation buttons and a search
 
 ## -see-also
 
-[Guidelines for command and app bars](/windows/uwp/controls-and-patterns/app-bars), [AppBar styles and templates](/windows/uwp/design/controls-and-patterns/xaml-styles), [AppBarButton](appbarbutton.md), [CommandBar](commandbar.md), [Commanding sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/XamlCommanding)
+[Guidelines for command and app bars](/windows/uwp/controls-and-patterns/app-bars), [AppBarButton](appbarbutton.md), [CommandBar](commandbar.md), [Commanding sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/XamlCommanding)

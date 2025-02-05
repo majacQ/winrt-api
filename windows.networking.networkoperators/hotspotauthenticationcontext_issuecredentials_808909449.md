@@ -14,11 +14,9 @@ public void IssueCredentials(System.String userName, System.String password, Sys
 Provides credentials to Windows for hotspot authentication
 
 > [!NOTE]
-> This functionality is only available to mobile operator apps and UWP apps given privileged access by mobile network operators.
-
-
-
-> If you want to use this API and publish your app to the Store, you will need special approval. For more information, see the **Special and restricted capabilities** section under [App capability declarations](/windows/uwp/packaging/app-capability-declarations). 
+> This functionality is available only to mobile operator apps and UWP apps given privileged access by mobile network operators.
+> 
+> If you want to use this API and publish your app to the Microsoft Store, then you'll need special approval. For more information, see the **Restricted capabilities** section in the [App capability declarations](/windows/uwp/packaging/app-capability-declarations#restricted-capabilities) topic. 
 
 Windows does not cache these credentials and another authentication event will be raised when the system connects to the same hotspot again.
 
@@ -36,7 +34,7 @@ Additional parameters to be appended to the authentication string. IssueCredenti
 If **true**, an application permanently disables the auto-connect property on a connection. If authentication fails, the connection will be disconnected and not retried in the current user session. Otherwise, **false**.
 
 ## -remarks
-Once IssueCredentials is called, the authentication context is finalized and IssueCredentials, [AbortAuthentication](hotspotauthenticationcontext_abortauthentication_278660964.md), or [SkipAuthentication](hotspotauthenticationcontext_SkipAuthentication.md) should not be called again.
+Once IssueCredentials is called, the authentication context is finalized and IssueCredentials, [AbortAuthentication](hotspotauthenticationcontext_abortauthentication_278660964.md), or [SkipAuthentication](hotspotauthenticationcontext_skipauthentication_1327264673.md) should not be called again.
 
 ## -examples
 

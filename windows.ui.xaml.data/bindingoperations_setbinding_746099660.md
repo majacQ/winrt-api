@@ -12,7 +12,7 @@ public void SetBinding(Windows.UI.Xaml.DependencyObject target, Windows.UI.Xaml.
 ## -description
 Associates a [Binding](binding.md) with a target property on a target object. This method is the code equivalent to using a [{Binding} markup extension](/windows/uwp/xaml-platform/binding-markup-extension) in XAML markup.
 
-Equivalent WinUI method: [Microsoft.UI.Xaml.Data.BindingOperations.SetBinding](/windows/winui/api/microsoft.ui.xaml.data.bindingoperations.setbinding).
+
 
 ## -parameters
 ### -param target
@@ -36,7 +36,7 @@ BindingOperations.SetBinding is a static utility method, and does basically the 
 
 ### Binding to attached properties
 
-You can put data bindings on any attached properties that a target object supports. Technically an [DependencyObject](../windows.ui.xaml/dependencyobject.md) supports all the possible attached properties, but you'd usually only set a binding on an attached property that's relevant to that object or your scenario. For example you would set a binding on [Grid.Row](/uwp/api/windows.ui.xaml.controls.grid#xaml-attached-properties) only if you anticipate that the target element has a [Grid](../windows.ui.xaml.controls/grid.md) parent that will use that info. Specify the *dp* parameter as the dependency property identifier that exists on the attached property's owner class (for the [Grid.Row](/uwp/api/windows.ui.xaml.controls.grid#xaml-attached-properties) example, that identifier is [Grid.RowProperty](../windows.ui.xaml.controls/grid_rowproperty.md)). You won't find that identifier on the target because it's an attached property. For more info on attached properties, see [Attached properties overview](/windows/uwp/xaml-platform/attached-properties-overview).
+You can put data bindings on any attached properties that a target object supports. Technically an [DependencyObject](../windows.ui.xaml/dependencyobject.md) supports all the possible attached properties, but you'd usually only set a binding on an attached property that's relevant to that object or your scenario. For example you would set a binding on [Grid.Row](/uwp/api/windows.ui.xaml.controls.grid.row) only if you anticipate that the target element has a [Grid](../windows.ui.xaml.controls/grid.md) parent that will use that info. Specify the *dp* parameter as the dependency property identifier that exists on the attached property's owner class (for the [Grid.Row](/uwp/api/windows.ui.xaml.controls.grid.row) example, that identifier is [Grid.RowProperty](../windows.ui.xaml.controls/grid_rowproperty.md)). You won't find that identifier on the target because it's an attached property. For more info on attached properties, see [Attached properties overview](/windows/uwp/xaml-platform/attached-properties-overview).
 
 ## -examples
 

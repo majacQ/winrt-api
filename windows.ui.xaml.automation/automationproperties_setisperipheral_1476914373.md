@@ -12,7 +12,7 @@ public void SetIsPeripheral(Windows.UI.Xaml.DependencyObject element, System.Boo
 ## -description
 Sets a Boolean value that indicates whether the specified element represents peripheral UI.
 
-Equivalent WinUI method: [Microsoft.UI.Xaml.Automation.AutomationProperties.SetIsPeripheral](/windows/winui/api/microsoft.ui.xaml.automation.automationproperties.setisperipheral).
+
 
 ## -parameters
 ### -param element
@@ -26,3 +26,5 @@ A Boolean value that indicates whether the [DependencyObject](../windows.ui.xaml
 ## -examples
 
 ## -see-also
+
+[AutomationProperties.IsPeripheral](automationproperties_isperipheral.md), [XAML attached properties](/windows/uwp/xaml-platform/attached-properties-overview)

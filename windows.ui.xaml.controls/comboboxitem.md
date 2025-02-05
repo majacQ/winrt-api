@@ -12,7 +12,6 @@ public class ComboBoxItem : Windows.UI.Xaml.Controls.Primitives.SelectorItem, Wi
 ## -description
 Represents the container for an item in a [ComboBox](combobox.md) control.
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.Controls.ComboBoxItem](/windows/winui/api/microsoft.ui.xaml.controls.comboboxitem).
 
 ## -xaml-syntax
 ```xaml
@@ -31,51 +30,23 @@ You can specify the look of the ComboBoxItem by setting the [ComboBox](combobox.
 
 ### Control style and template
 
-You can modify the default [Style](../windows.ui.xaml/style.md) and [ControlTemplate](controltemplate.md) to give the control a unique appearance. For information about modifying a control's style and template, see [Styling controls](/windows/uwp/controls-and-patterns/styling-controls). The default style, template, and resources that define the look of the control are included in the generic.xaml file. For design purposes, generic.xaml is available in the \(Program Files)\Windows Kits\10\DesignTime\CommonConfiguration\Neutral\UAP\ &lt;SDK version&gt;\Generic folder from a Windows Software Development Kit (SDK) installation. Styles and resources from different versions of the SDK might have different values.
+You can modify the default [Style](../windows.ui.xaml/style.md) and [ControlTemplate](controltemplate.md) to give the control a unique appearance. For information about modifying a control's style and template, see [Styling controls](/windows/uwp/controls-and-patterns/styling-controls). The default style, template, and resources that define the look of the control are included in the `generic.xaml` file. For design purposes, `generic.xaml` is available locally with the SDK or NuGet package installation.
 
-Starting in Windows 10, version 1607 (SDK 14393), generic.xaml includes resources that you can use to modify the colors of a control in different visual states without modifying the control template. In apps that target this software development kit (SDK) or later, modifying these resources is preferred to setting properties such as [Background](control_background.md) and [Foreground](control_foreground.md). For more info, see the [Light-weight styling](/windows/uwp/controls-and-patterns/styling-controls) section of the [Styling controls](/windows/uwp/controls-and-patterns/styling-controls) article.
+- **[WinUI Styles (recommended)](/windows/apps/design/style/xaml-styles#winui-and-styles):** For updated styles from WinUI, see `\Users\<username>\.nuget\packages\microsoft.ui.xaml\<version>\lib\uap10.0\Microsoft.UI.Xaml\Themes\generic.xaml`.
+- **Non-WinUI styles:** For built-in styles, see `%ProgramFiles(x86)%\Windows Kits\10\DesignTime\CommonConfiguration\Neutral\UAP\<SDK version>\Generic\generic.xaml`.
 
-This table shows the resources used by the ComboBoxItem control.
+Locations might be different if you customized the installation. Styles and resources from different versions of the SDK might have different values.
 
-<table>
-   <tr><th>Resource key</th><th>Description</th></tr>
-   <tr><td>ComboBoxItemForeground</td><td>Text color at rest</td></tr>
-   <tr><td>ComboBoxItemForegroundPointerOver</td><td>Text color on hover</td></tr>
-   <tr><td>ComboBoxItemForegroundPressed</td><td>Text color when pressed</td></tr>
-   <tr><td>ComboBoxItemForegroundDisabled</td><td>Text color when disabled</td></tr>
-   <tr><td>ComboBoxItemForegroundSelected</td><td>Text color when selected</td></tr>
-   <tr><td>ComboBoxItemForegroundSelectedUnfocused</td><td>Text color when unfocused and selected</td></tr>
-   <tr><td>ComboBoxItemForegroundSelectedPointerOver</td><td>Text color on hover and selected</td></tr>
-   <tr><td>ComboBoxItemForegroundSelectedPressed</td><td>Text color when pressed and selected</td></tr>
-   <tr><td>ComboBoxItemForegroundSelectedDisabled</td><td>Text color when disabled and selected</td></tr>
-   <tr><td>ComboBoxItemBackground</td><td>Background color at rest</td></tr>
-   <tr><td>ComboBoxItemBackgroundPointerOver</td><td>Background color on hover</td></tr>
-   <tr><td>ComboBoxItemBackgroundPressed</td><td>Background color when pressed</td></tr>
-   <tr><td>ComboBoxItemBackgroundDisabled</td><td>Background color when disabled</td></tr>
-   <tr><td>ComboBoxItemBackgroundSelected</td><td>Background color when selected</td></tr>
-   <tr><td>ComboBoxItemBackgroundSelectedUnfocused</td><td>Background color when unfocused and selected</td></tr>
-   <tr><td>ComboBoxItemBackgroundSelectedPointerOver</td><td>Background color on hover and selected</td></tr>
-   <tr><td>ComboBoxItemBackgroundSelectedPressed</td><td>Background color when pressed and selected</td></tr>
-   <tr><td>ComboBoxItemBackgroundSelectedDisabled</td><td>Background color when disabled and selected</td></tr>
-   <tr><td>ComboBoxItemBorderBrush</td><td>Border color at rest</td></tr>
-   <tr><td>ComboBoxItemBorderBrushPointerOver</td><td>Border color on hover</td></tr>
-   <tr><td>ComboBoxItemBorderBrushPressed</td><td>Border color when pressed</td></tr>
-   <tr><td>ComboBoxItemBorderBrushDisabled</td><td>Border color when disabled</td></tr>
-   <tr><td>ComboBoxItemBorderBrushSelected</td><td>Border color when selected</td></tr>
-   <tr><td>ComboBoxItemBorderBrushSelectedUnfocused</td><td>Border color when unfocused and selected</td></tr>
-   <tr><td>ComboBoxItemBorderBrushSelectedPointerOver</td><td>Border color on hover and selected</td></tr>
-   <tr><td>ComboBoxItemBorderBrushSelectedPressed</td><td>Border color when pressed and selected</td></tr>
-   <tr><td>ComboBoxItemBorderBrushSelectedDisabled</td><td>Border color when disabled and selected</td></tr>
-</table>
+XAML also includes resources that you can use to modify the colors of a control in different visual states without modifying the control template. Modifying these resources is preferred to setting properties such as [Background](control_background.md) and [Foreground](control_foreground.md). For more info, see the [Light-weight styling](/windows/apps/design/style/xaml-styles#lightweight-styling) section of the [XAML styles](/windows/apps/design/style/xaml-styles) article. Light-weight styling resources are available starting in Windows 10, version 1607 (SDK 14393).
 
 ## -examples
 
 > [!TIP]
 > For more info, design guidance, and code examples, see [Combo box](/windows/uwp/design/controls-and-patterns/combo-box).
 >
-> If you have the **XAML Controls Gallery** app installed, click here to [open the app and see the ComboBox in action](xamlcontrolsgallery:/item/ComboBox).
-> + [Get the XAML Controls Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
-> + [Get the source code (GitHub)](https://github.com/Microsoft/Xaml-Controls-Gallery)
+> If you have the **WinUI 2 Gallery** app installed, click here to [open the app and see the ComboBox in action](winui2gallery:/item/ComboBox).
+> + [Get the WinUI 2 Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
+> + [Get the source code (GitHub)](https://github.com/Microsoft/WinUI-Gallery)
 
 ## -see-also
-[SelectorItem](../windows.ui.xaml.controls.primitives/selectoritem.md), [ComboBox](combobox.md), [ItemContainerStyle](itemscontrol_itemcontainerstyle.md), [ComboBoxItem styles and templates](/windows/uwp/design/controls-and-patterns/xaml-styles)
+[SelectorItem](../windows.ui.xaml.controls.primitives/selectoritem.md), [ComboBox](combobox.md), [ItemContainerStyle](itemscontrol_itemcontainerstyle.md)

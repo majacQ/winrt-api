@@ -13,9 +13,9 @@ public enum ComboBoxSelectionChangedTrigger : int {
 # Windows.UI.Xaml.Controls.ComboBoxSelectionChangedTrigger
 
 ## -description
-Defines constants that specify what action causes a [SelectionChanged](combobox_selectionchanged.md) event to occur.
+Defines constants that specify what action causes a [SelectionChanged](/uwp/api/windows.ui.xaml.controls.primitives.selector.selectionchanged) event to occur.
 
-Equivalent WinUI enum: [Microsoft.UI.Xaml.Controls.ComboBoxSelectionChangedTrigger](/windows/winui/api/microsoft.ui.xaml.controls.comboboxselectionchangedtrigger).
+
 
 ## -enum-fields
 

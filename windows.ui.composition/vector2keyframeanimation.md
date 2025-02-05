@@ -12,7 +12,7 @@ public class Vector2KeyFrameAnimation : Windows.UI.Composition.KeyFrameAnimation
 ## -description
 A time-based animation that targets any Vector2-based property with one or more key frames.
 
-Equivalent WinUI class: [Microsoft.UI.Composition.Vector2KeyFrameAnimation](/windows/winui/api/microsoft.ui.composition.vector2keyframeanimation).
+
 
 ## -remarks
 
@@ -23,4 +23,4 @@ An animation is associated with an object's property by calling [CompostionObjec
 ## -examples
 
 ## -see-also
-[Composition Animations Overview](/en-us/windows/uwp/composition/composition-animation), [KeyFrameAnimation](keyframeanimation.md), [IClosable](../windows.foundation/iclosable.md)
+[Composition Animations Overview](/windows/uwp/composition/composition-animation), [KeyFrameAnimation](keyframeanimation.md), [IClosable](../windows.foundation/iclosable.md)

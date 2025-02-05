@@ -12,7 +12,7 @@ public void SetLocalizedLandmarkType(Windows.UI.Xaml.DependencyObject element, S
 ## -description
 Sets the value of the localized landmark type attached property for the specified [DependencyObject](../windows.ui.xaml/dependencyobject.md).
 
-Equivalent WinUI method: [Microsoft.UI.Xaml.Automation.AutomationProperties.SetLocalizedLandmarkType](/windows/winui/api/microsoft.ui.xaml.automation.automationproperties.setlocalizedlandmarktype).
+
 
 ## -parameters
 ### -param element
@@ -26,3 +26,5 @@ The localized string defining the landmark type of the *element*.
 ## -examples
 
 ## -see-also
+
+[AutomationProperties.LocalizedLandmarkType](automationproperties_localizedlandmarktype.md), [XAML attached properties](/windows/uwp/xaml-platform/attached-properties-overview)

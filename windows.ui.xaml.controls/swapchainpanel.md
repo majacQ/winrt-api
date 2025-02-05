@@ -13,7 +13,6 @@ public class SwapChainPanel : Windows.UI.Xaml.Controls.Grid, Windows.UI.Xaml.Con
 
 Provides a hosting surface, where Microsoft DirectX swap chains provide content that can be rendered into a XAML UI. A SwapChainPanel element is a key component for an app that renders Microsoft DirectX graphics and then presents those visuals within a XAML page.
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.Controls.SwapChainPanel](/windows/winui/api/microsoft.ui.xaml.controls.swapchainpanel).
 
 ## -xaml-syntax
 
@@ -23,7 +22,7 @@ Equivalent WinUI class: [Microsoft.UI.Xaml.Controls.SwapChainPanel](/windows/win
 
 ## -remarks
 
-A SwapChainPanel is a [Grid](grid.md) subclass, so you can use [ColumnDefinitions](grid_columndefinitions.md) and [RowDefinitions](grid_rowdefinitions.md) properties to declare the panel's characteristics, and the attached properties of [Grid](grid.md) such as [Grid.Row](/uwp/api/windows.ui.xaml.controls.grid#xaml-attached-properties) and [Grid.Column](/uwp/api/windows.ui.xaml.controls.grid#xaml-attached-properties) on child elements to position those child elements in the layout.
+A SwapChainPanel is a [Grid](grid.md) subclass, so you can use [ColumnDefinitions](grid_columndefinitions.md) and [RowDefinitions](grid_rowdefinitions.md) properties to declare the panel's characteristics, and the attached properties of [Grid](grid.md) such as [Grid.Row](/uwp/api/windows.ui.xaml.controls.grid.row) and [Grid.Column](/uwp/api/windows.ui.xaml.controls.grid.column) on child elements to position those child elements in the layout.
 
 SwapChainPanel inherits the Background property from Panel, but you can't set the Background on a SwapChainPanel. An error occurs if you attempt to set it.
 
@@ -37,7 +36,7 @@ For code examples that use SwapChainPanel, see [XAML SwapChainPanel DirectX inte
 
 Before a SwapChainPanel can render content, you must initialize it from the Microsoft DirectX side.
 
-Cast the SwapChainPanel instance to [IInspectable](/windows/desktop/api/inspectable/nn-inspectable-iinspectable) or [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown), then call [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) to obtain a reference to the [ISwapChainPanelNative](/windows/desktop/api/windows.ui.xaml.media.dxinterop/nn-windows-ui-xaml-media-dxinterop-iswapchainpanelnative) interface (this is the native interface implementation that is the complement to the SwapChainPanel and enables the interop bridge). Then, call [ISwapChainPanelNative.SetSwapChain](/windows/desktop/api/windows.ui.xaml.media.dxinterop/nf-windows-ui-xaml-media-dxinterop-iswapchainpanelnative-setswapchain) on that reference to associate your implemented swap chain with the SwapChainPanel instance.
+Cast the SwapChainPanel instance to [IInspectable](/windows/desktop/api/inspectable/nn-inspectable-iinspectable) or [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown), then call [QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) to obtain a reference to the [ISwapChainPanelNative](/windows/desktop/api/windows.ui.xaml.media.dxinterop/nn-windows-ui-xaml-media-dxinterop-iswapchainpanelnative) interface (this is the native interface implementation that is the complement to the SwapChainPanel and enables the interop bridge). Then, call [ISwapChainPanelNative.SetSwapChain](/windows/desktop/api/windows.ui.xaml.media.dxinterop/nf-windows-ui-xaml-media-dxinterop-iswapchainpanelnative-setswapchain) on that reference to associate your implemented swap chain with the SwapChainPanel instance.
 
 It's common to put the code that queries the interface and sets the swap chain as part of a **Create*Resources** method. The **Create*Resources** methods are an implementation pattern that's seen in the Microsoft DirectX  **Renderer** class templates/examples, and you'll also see this implementation pattern in the SDK samples, and in the code you get from the **DirectX (XAML)** project template in Microsoft Visual Studio. Specifically, in the **DirectX (XAML)** project template, you'll see the **QueryInterface** call and the call to [ISwapChainPanelNative.SetSwapChain](/windows/desktop/api/windows.ui.xaml.media.dxinterop/nf-windows-ui-xaml-media-dxinterop-iswapchainpanelnative-setswapchain) in the `DeviceResources::CreateWindowSizeDependentResources` method implementation in DeviceResources.cpp.
 

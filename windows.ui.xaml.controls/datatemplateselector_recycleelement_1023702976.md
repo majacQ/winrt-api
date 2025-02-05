@@ -14,7 +14,7 @@ public void DataTemplateSelector.RecycleElement(ElementFactoryRecycleArgs args)
 
 Recycles a [UIElement](../windows.ui.xaml/uielement.md) object that was created using [GetElement](datatemplateselector_getelement_92222689.md).
 
-Equivalent WinUI method: [Microsoft.UI.Xaml.Controls.DataTemplateSelector.RecycleElement](/windows/winui/api/microsoft.ui.xaml.controls.datatemplateselector.recycleelement).
+
 
 ## -parameters
 
@@ -28,6 +28,6 @@ For more info, see the remarks for the [DataTemplate.RecycleElement](../windows.
 
 ## -see-also
 
-[IElementFactory](ielementfactory.md), [DataTemplate.GetElement](/uwp/api/windows.ui.xaml.datatemplate.getelement), [DataTemplate.RecycleElement](/uwp/api/windows.ui.xaml.datatemplate.recycleelement), [DataTemplateSelector.GetElement](/uwp/api/windows.ui.xaml.controls.datatemplateselector.getelement)
+[IElementFactory](../windows.ui.xaml/ielementfactory.md), [DataTemplate.GetElement](/uwp/api/windows.ui.xaml.datatemplate.getelement), [DataTemplate.RecycleElement](/uwp/api/windows.ui.xaml.datatemplate.recycleelement), [DataTemplateSelector.GetElement](/uwp/api/windows.ui.xaml.controls.datatemplateselector.getelement)
 
 ## -examples

@@ -10,14 +10,17 @@ public Windows.Foundation.Collections.IVectorView<Windows.ApplicationModel.Packa
 # Windows.ApplicationModel.Package.Dependencies
 
 ## -description
+
 Gets the packages on which the current package depends.
 
 ## -property-value
+
 The packages on which the current package depends.
 
 ## -remarks
+
 > [!IMPORTANT]
-> Although [Package](package.md) is supported in desktop apps, this member is supported only in UWP app. To access a package's dependencies from a desktop app, use [GetPackageInfo](/windows/desktop/api/appmodel/nf-appmodel-getpackageinfo).
+> Although the [Package](package.md) class is supported in an unpackaged process (that is, a process belonging to an app that lacks package identity), the **Package.Current** property is supported only in a *packaged* process (that is, a process belonging to an app that *has* package identity). To access a package's dependencies from an unpackaged process, use [GetPackageInfo](/windows/desktop/api/appmodel/nf-appmodel-getpackageinfo). And for more info about packaging, see [Package a desktop or UWP app in Visual Studio](/windows/msix/package/packaging-uwp-apps).
 
 ## -examples
 
@@ -30,4 +33,5 @@ IReadOnlyList<Package> dependencies = currentPackage.Dependencies;
 ```
 
 ## -see-also
-[App package information sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Package)
+
+[FindRelatedPackages](package_findrelatedpackages_1584363112.md),[App package information sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/Package)

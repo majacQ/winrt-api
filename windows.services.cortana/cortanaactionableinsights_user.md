@@ -14,14 +14,12 @@ public User User { get; }
 
 Gets the user associated with the current [CortanaActionableInsights](cortanaactionableinsights.md) object.
 
-> [!IMPORTANT]
-> The [CortanaActionableInsights](cortanaactionableinsights.md) APIs are a limited access feature. Please contact [InsightsAPISupport@microsoft.com](mailto://InsightsAPISupport@microsoft.com) for more info, or to request an unlock token.
 
 ## -property-value
 
 The User associated with the current [CortanaActionableInsights](cortanaactionableinsights.md) object.
 
-Might return **null** if the [CortanaActionableInsights](cortanaactionableinsights.md) object was created with the [GetDefault](cortanaactionableinsgiihts_getdefault.md) method.
+Might return **null** if the [CortanaActionableInsights](cortanaactionableinsights.md) object was created with the [GetDefault](cortanaactionableinsights_getdefault_846721868.md) method.
 
 ## -capabilities
 

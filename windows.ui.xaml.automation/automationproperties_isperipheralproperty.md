@@ -10,9 +10,10 @@ public Windows.UI.Xaml.DependencyProperty IsPeripheralProperty { get; }
 # Windows.UI.Xaml.Automation.AutomationProperties.IsPeripheralProperty
 
 ## -description
-Identifies the Boolean dependency property that indicates if the automation element represents peripheral UI.
 
-Equivalent WinUI property: [Microsoft.UI.Xaml.Automation.AutomationProperties.IsPeripheralProperty](/windows/winui/api/microsoft.ui.xaml.automation.automationproperties.isperipheralproperty).
+Identifies [AutomationProperties.IsPeripheral](automationproperties_isperipheral.md) XAML attached property.
+
+
 
 ## -property-value
 The dependency property identifier.
@@ -24,16 +25,14 @@ When the **IsPeripheral** property is **true**, a client application can't assum
 
 This property is relevant for these control types:
 
+## -property-value
 
-+ Group controls
-+ Menu controls
-+ Pane controls
-+ ToolBar controls
-+ ToolTip controls
-+ Window controls
-+ Custom controls
+The identifier for the [AutomationProperties.IsPeripheral](automationproperties_isperipheral.md) XAML attached property.
 
+## -remarks
 
 ## -examples
 
 ## -see-also
+
+[AutomationProperties.IsPeripheral](automationproperties_isperipheral.md), [XAML attached properties](/windows/uwp/xaml-platform/attached-properties-overview)

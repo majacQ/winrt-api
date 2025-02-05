@@ -13,7 +13,7 @@ public event Windows.UI.Xaml.Input.PointerEventHandler PointerReleased
 
 Occurs when the pointer device that previously initiated a **Press** action is released, while within this element. Note that the end of a **Press** action is not guaranteed to fire a PointerReleased event; other events may fire instead. For more info, see Remarks.
 
-Equivalent WinUI event: [Microsoft.UI.Xaml.UIElement.PointerReleased](/windows/winui/api/microsoft.ui.xaml.uielement.pointerreleased).
+
 
 ## -xaml-syntax
 
@@ -54,4 +54,4 @@ Controls may also have a [PointerUpThemeAnimation](../windows.ui.xaml.media.anim
 
 ## -see-also
 
-[PointerRoutedEventArgs](../windows.ui.xaml.input/pointerroutedeventargs.md), [Tapped](uielement_tapped.md), [PointerPressed](uielement_pointerpressed.md), [Handle pointer input](/windows/uwp/design/input/handle-pointer-input), [Relative mouse movement and CoreWindow](/en-us/windows/uwp/gaming/relative-mouse-movement), [XAML user input events sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Input%20XAML%20user%20input%20events%20sample)
+[PointerRoutedEventArgs](../windows.ui.xaml.input/pointerroutedeventargs.md), [Tapped](uielement_tapped.md), [PointerPressed](uielement_pointerpressed.md), [Handle pointer input](/windows/uwp/design/input/handle-pointer-input), [Relative mouse movement and CoreWindow](/windows/uwp/gaming/relative-mouse-movement), [XAML user input events sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Input%20XAML%20user%20input%20events%20sample)

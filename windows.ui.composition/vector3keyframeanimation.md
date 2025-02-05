@@ -12,7 +12,7 @@ public class Vector3KeyFrameAnimation : Windows.UI.Composition.KeyFrameAnimation
 ## -description
 A time-based animation that targets any Vector3-based property with one or more keyframes.
 
-Equivalent WinUI class: [Microsoft.UI.Composition.Vector3KeyFrameAnimation](/windows/winui/api/microsoft.ui.composition.vector3keyframeanimation).
+
 
 ## -remarks
 
@@ -66,4 +66,4 @@ void AnimatingVisualOffset(Visual targetVisual)
 
 
 ## -see-also
-[Composition Animations Overview](/en-us/windows/uwp/composition/composition-animation), [KeyFrameAnimation](keyframeanimation.md), [IClosable](../windows.foundation/iclosable.md)
+[Composition Animations Overview](/windows/uwp/composition/composition-animation), [KeyFrameAnimation](keyframeanimation.md), [IClosable](../windows.foundation/iclosable.md)

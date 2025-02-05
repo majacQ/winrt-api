@@ -11,7 +11,12 @@ public class RevealBrush : XamlCompositionBrushBase, XamlCompositionBrushBase
 
 ## -description
 
+> [!Important]
+> RevealBrush is available for use in the operating systems specified in the Requirements section. However, we do not recommend its use as it may be altered or unavailable in subsequent versions.
+
 Base class for brushes that use composition effects and lighting to implement the reveal visual design treatment.
+
+Equivalent **WinUI 2 API for UWP**: [Microsoft.UI.Xaml.Media.RevealBrush](/windows/winui/api/microsoft.ui.xaml.media.revealbrush) (for WinUI in the [Windows App SDK](/windows/apps/windows-app-sdk/), see the **[Windows App SDK namespaces](/windows/windows-app-sdk/api/winrt/)**).
 
 ## -remarks
 
@@ -23,15 +28,15 @@ In order to support XAML processor access to the attached properties, and also t
 
 | Attached property | Description |
 | - | - |
-| State | Gets or sets a value that indicates the pointer state of the element that this brush is used on.<ul><li>Type: [RevealBrushState](revealbrushstate.md)</li><li>Identifier field: <a href="/uwp/api/windows.ui.xaml.media.revealbrush.stateproperty">StateProperty</a></li><li>Accessor methods: <a href="/uwp/api/windows.ui.xaml.media.revealbrush.getstate">GetState</a>, <a href="/uwp/api/windows.ui.xaml.media.revealbrush.setstate">SetState</a></li></ul> |
+| [State](revealbrush_state.md) | Gets or sets a value that indicates the pointer state of the element that this brush is used on. |
 
 ## -see-also
 
 ## -examples
 
 > [!TIP]
-> For more info, design guidance, and code examples, see [Reveal Highlight](/en-us/windows/uwp/design/style/reveal).
+> For more info, design guidance, and code examples, see [Using brushes to paint backgrounds, foregrounds, and outlines](/windows/apps/design/style/brushes).
 >
-> If you have the **XAML Controls Gallery** app installed, click here to [open the app and see Reveal in action](xamlcontrolsgallery:/item/Reveal).
-> + [Get the XAML Controls Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
-> + [Get the source code (GitHub)](https://github.com/Microsoft/Xaml-Controls-Gallery)
+> If you have the **WinUI 2 Gallery** app installed, [open the app to see the controls in action](winui2gallery:).
+> + [Get the WinUI 2 Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
+> + [Get the source code (GitHub)](https://github.com/Microsoft/WinUI-Gallery)

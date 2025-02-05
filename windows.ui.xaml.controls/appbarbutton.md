@@ -13,7 +13,6 @@ public class AppBarButton : Windows.UI.Xaml.Controls.Button, Windows.UI.Xaml.Con
 
 Represents a templated button control to be displayed in an [AppBar](appbar.md).
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.Controls.AppBarButton](/windows/winui/api/microsoft.ui.xaml.controls.appbarbutton).
 
 ## -xaml-syntax
 
@@ -48,31 +47,18 @@ You use the [Label](appbarbutton_label.md) and [Icon](appbarbutton_icon.md) prop
 + [PathIcon](pathicon.md) - the icon is based on [Path](../windows.ui.xaml.shapes/path.md) data.
 + [SymbolIcon](symbolicon.md) - the icon is based on a glyph from the Segoe MDL2 Assets font as listed in the [Symbol](symbol.md) enumeration.
 
-AppBarButton icons have a default font size of 20px. 
+AppBarButton icons have a default font size of 20px.
 
 ### Control style and template
 
-You can modify the default [Style](../windows.ui.xaml/style.md) and [ControlTemplate](controltemplate.md) to give the control a unique appearance. For information about modifying a control's style and template, see [Styling controls](/windows/uwp/controls-and-patterns/styling-controls). The default style, template, and resources that define the look of the control are included in the generic.xaml file. For design purposes, generic.xaml is available in the \(Program Files)\Windows Kits\10\DesignTime\CommonConfiguration\Neutral\UAP\ &lt;SDK version&gt;\Generic folder from a Windows Software Development Kit (SDK) installation. Styles and resources from different versions of the SDK might have different values.
+You can modify the default [Style](../windows.ui.xaml/style.md) and [ControlTemplate](controltemplate.md) to give the control a unique appearance. For information about modifying a control's style and template, see [Styling controls](/windows/uwp/controls-and-patterns/styling-controls). The default style, template, and resources that define the look of the control are included in the `generic.xaml` file. For design purposes, `generic.xaml` is available locally with the SDK or NuGet package installation.
 
-Starting in Windows 10, version 1607 (SDK 14393), generic.xaml includes resources that you can use to modify the colors of a control in different visual states without modifying the control template. In apps that target this software development kit (SDK) or later, modifying these resources is preferred to setting properties such as [Background](control_background.md) and [Foreground](control_foreground.md). For more info, see the [Light-weight styling](/windows/uwp/controls-and-patterns/styling-controls) section of the [Styling controls](/windows/uwp/controls-and-patterns/styling-controls) article.
+- **[WinUI Styles (recommended)](/windows/apps/design/style/xaml-styles#winui-and-styles):** For updated styles from WinUI, see `\Users\<username>\.nuget\packages\microsoft.ui.xaml\<version>\lib\uap10.0\Microsoft.UI.Xaml\Themes\generic.xaml`.
+- **Non-WinUI styles:** For built-in styles, see `%ProgramFiles(x86)%\Windows Kits\10\DesignTime\CommonConfiguration\Neutral\UAP\<SDK version>\Generic\generic.xaml`.
 
-This table shows the resources used by the AppBarButton control.
+Locations might be different if you customized the installation. Styles and resources from different versions of the SDK might have different values.
 
-<table>
-   <tr><th>Resource key</th><th>Description</th></tr>
-   <tr><td>AppBarButtonBackground</td><td>Background color at rest</td></tr>
-   <tr><td>AppBarButtonBackgroundPointerOver</td><td>Background color on hover</td></tr>
-   <tr><td>AppBarButtonBackgroundPressed</td><td>Background color when pressed</td></tr>
-   <tr><td>AppBarButtonBackgroundDisabled</td><td>Background color when disabled</td></tr>
-   <tr><td>AppBarButtonForeground</td><td>Foreground color at rest</td></tr>
-   <tr><td>AppBarButtonForegroundPointerOver</td><td>Foreground color on hover</td></tr>
-   <tr><td>AppBarButtonForegroundPressed</td><td>Foreground color when pressed</td></tr>
-   <tr><td>AppBarButtonForegroundDisabled</td><td>Foreground color when disabled</td></tr>
-   <tr><td>AppBarButtonBorderBrush</td><td>Border color at rest</td></tr>
-   <tr><td>AppBarButtonBorderBrushPointerOver</td><td>Border color on hover</td></tr>
-   <tr><td>AppBarButtonBorderBrushPressed</td><td>Border color when pressed</td></tr>
-   <tr><td>AppBarButtonBorderBrushDisabled</td><td>Border color when disabled</td></tr>
-</table>
+XAML also includes resources that you can use to modify the colors of a control in different visual states without modifying the control template. Modifying these resources is preferred to setting properties such as [Background](control_background.md) and [Foreground](control_foreground.md). For more info, see the [Light-weight styling](/windows/apps/design/style/xaml-styles#lightweight-styling) section of the [XAML styles](/windows/apps/design/style/xaml-styles) article. Light-weight styling resources are available starting in Windows 10, version 1607 (SDK 14393).
 
 ### Version history
 
@@ -87,11 +73,12 @@ This table shows the resources used by the AppBarButton control.
 ## -examples
 
 > [!TIP]
-> For more info, design guidance, and code examples, see [Command bar](/windows/uwp/controls-and-patterns/app-bars).
->
-> If you have the **XAML Controls Gallery** app installed, click here to [open the app and see the AppBarButton in action](xamlcontrolsgallery:/item/AppBarButton).
-> + [Get the XAML Controls Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
-> + [Get the source code (GitHub)](https://github.com/Microsoft/Xaml-Controls-Gallery)
+> For more info, design guidance, and code examples, see [Command bar](/windows/apps/design/controls/command-bar).
+
+> [!div class="nextstepaction"]
+> [Open the WinUI 2 Gallery app and see the AppBarButton in action](winui2gallery:/item/AppBarButton)
+
+> The **WinUI 2 Gallery** app includes interactive examples of most WinUI 2 controls, features, and functionality. Get the app from the [Microsoft Store](https://www.microsoft.com/store/productId/9MSVH128X2ZT) or get the source code on [GitHub](https://github.com/Microsoft/WinUI-Gallery/tree/winui2).
 
 This example shows AppBarButton controls with each type of icon:
 
@@ -230,4 +217,4 @@ private void PlayPauseButton_Click(object sender, RoutedEventArgs e)
 
 ## -see-also
 
-[AppBar](appbar.md), [CommandBar](commandbar.md), [Commanding sample (Windows 10)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/XamlCommanding), [AppBarButton styles and templates](/windows/uwp/design/controls-and-patterns/xaml-styles), [XAML AppBar control sample (Windows 8)](/samples/browse/)
+[AppBar](appbar.md), [CommandBar](commandbar.md), [Commanding sample (Windows 10)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/XamlCommanding)

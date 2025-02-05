@@ -13,7 +13,6 @@ public enum Windows.UI.Text.TextScript : int
 
 Specifies the character repertoire for a run of character formatting.
 
-Equivalent WinUI enum: [TextScript](/windows/winui/api/microsoft.ui.text.textscript).
 
 ## -enum-fields
 
@@ -260,7 +259,7 @@ Tifinagh
 
 Character repertoires are typically scripts like Arabic and Latin, but there are also character repertoires for symbols and Emoji.
 
-To learn more about character repertoires, see [RichEdit Font Binding](/en-us/archive/blogs/murrays/richedit-font-binding).
+To learn more about character repertoires, see [RichEdit Font Binding](/windows/win32/controls/use-font-binding-in-rich-edit-controls).
 
 ## -examples
 

@@ -12,7 +12,6 @@ public Windows.UI.Xaml.DependencyProperty FromHorizontalOffsetProperty { get; }
 ## -description
 Identifies the [FromHorizontalOffset](entrancethemetransition_fromhorizontaloffset.md) dependency property.
 
-Equivalent WinUI property: [Microsoft.UI.Xaml.Media.Animation.EntranceThemeTransition.FromHorizontalOffsetProperty](/windows/winui/api/microsoft.ui.xaml.media.animation.entrancethemetransition.fromhorizontaloffsetproperty).
 
 ## -property-value
 The identifier for the [FromHorizontalOffset](entrancethemetransition_fromhorizontaloffset.md) dependency property.
@@ -22,4 +21,4 @@ The identifier for the [FromHorizontalOffset](entrancethemetransition_fromhorizo
 ## -examples
 
 ## -see-also
-[Animating page transitions](/previous-versions/windows/apps/jj649426(v=win.10)), [Guidelines and checklist for page transition animations](https://msdn.microsoft.com/library/windows/apps/jj635239.aspx)
+[Animating page transitions](/previous-versions/windows/apps/jj649426(v=win.10)), [Guidelines and checklist for page transition animations](/windows/apps/design/motion/content-transition-animations)

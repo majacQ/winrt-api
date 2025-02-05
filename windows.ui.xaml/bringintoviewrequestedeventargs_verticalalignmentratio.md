@@ -12,14 +12,23 @@ public double VerticalAlignmentRatio { get; }
 ## -description
 Gets the requested vertical alignment ratio which controls the alignment of the horizontal axis of the TargetRect with respect to the horizontal axis of the viewport. 
 
-Equivalent WinUI property: [Microsoft.UI.Xaml.BringIntoViewRequestedEventArgs.VerticalAlignmentRatio](/windows/winui/api/microsoft.ui.xaml.bringintoviewrequestedeventargs.verticalalignmentratio).
+
 
 ## -property-value
 
 The requested vertical alignment ratio between 0.0 and 1.0, or NaN. See Remarks.
 
 ## -remarks
-A value of _NaN_ implies that scrolling controls should do the minimum necessary to bring the element fully into view aligned to the nearest edge of the viewport. Otherwise, the range of possible value is clamped from 0.0 to 1.0 with 0.0 representing the top horizontal edge and 1.0 representing the bottom horizontal edge.
+A value of NaN indicates that scrolling controls should do the minimum necessary to bring the element fully into view aligned to the nearest edge of the viewport.
+
+> [!NOTE]
+> Do not use the `==` operator to test for NaN.
+>
+> In C#, use [Double.IsNaN()](/dotnet/api/system.double.isnan?view=dotnet-uwp-10.0&preserve-view=true) to test for NaN.
+>
+> In C++, use [isnan()](/cpp/c-runtime-library/reference/isnan-isnan-isnanf) to test for NaN.
+
+If the value is not NaN, then the range of possible value is clamped from 0.0 to 1.0 with 0.0 representing the top horizontal edge and 1.0 representing the bottom horizontal edge.
 
 A value of 0.0 indicates the TargetRect should be top-aligned in the viewport. A value of 1.0 indicates it should be bottom-aligned. A value of 0.5 indicates the TargetRect should be vertically centered in the viewport.
 

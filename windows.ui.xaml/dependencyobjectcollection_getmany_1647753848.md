@@ -12,7 +12,7 @@ public uint GetMany(System.UInt32 startIndex, Windows.UI.Xaml.DependencyObject[]
 ## -description
 Retrieves multiple elements in a single pass through the iterator.
 
-Equivalent WinUI method: [Microsoft.UI.Xaml.DependencyObjectCollection.GetMany](/windows/winui/api/microsoft.ui.xaml.dependencyobjectcollection.getmany).
+
 
 ## -parameters
 ### -param startIndex
@@ -25,8 +25,6 @@ Provides the destination for the result. Size the initial array size as a *capac
 The number of items returned.
 
 ## -remarks
-> [!NOTE]
-> The equivalent Microsoft .NET  API is [CopyTo](dependencyobjectcollection_copyto.md).
 
 ## -examples
 

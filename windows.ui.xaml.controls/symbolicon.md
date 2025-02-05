@@ -13,7 +13,6 @@ public class SymbolIcon : Windows.UI.Xaml.Controls.IconElement, Windows.UI.Xaml.
 
 Represents an icon that uses a glyph from the Segoe MDL2 Assets font as its content.
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.Controls.SymbolIcon](/windows/winui/api/microsoft.ui.xaml.controls.symbolicon).
 
 ## -xaml-syntax
 
@@ -28,7 +27,9 @@ The most common way to specify the icon for an app bar button is to use one of t
 > [!NOTE]
 > You can set the **Foreground** property on the [AppBarButton](appbarbutton.md) or on the SymbolIcon. If you set the [Foreground](control_foreground.md) on the [AppBarButton](appbarbutton.md), it's applied only to the default visual state. It's not applied to the other visual states defined in the [AppBarButton](appbarbutton.md) template, like `MouseOver`. If you set the [Foreground](iconelement_foreground.md) on the SymbolIcon, the color is applied to all visual states.
 
-> **Windows 8/8.1**
+### Notes for previous versions
+
+> **Windows 8.x**
 > On Windows 8, the standard glyphs are provided by the Segoe UI Symbol font.
 
 ## -examples
@@ -36,9 +37,9 @@ The most common way to specify the icon for an app bar button is to use one of t
 > [!TIP]
 > For more info, design guidance, and code examples, see [Command bar](/windows/uwp/controls-and-patterns/app-bars).
 >
-> If you have the **XAML Controls Gallery** app installed, click here to [open the app and see the SymbolIcon in action](xamlcontrolsgallery:/item/AppBarButton).
-> + [Get the XAML Controls Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
-> + [Get the source code (GitHub)](https://github.com/Microsoft/Xaml-Controls-Gallery)
+> If you have the **WinUI 2 Gallery** app installed, click here to [open the app and see the SymbolIcon in action](winui2gallery:/item/AppBarButton).
+> + [Get the WinUI 2 Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
+> + [Get the source code (GitHub)](https://github.com/Microsoft/WinUI-Gallery)
 
 This example shows two ways to use a SymbolIcon an [AppBarButton](appbarbutton.md). The second button icon has its [Foreground](iconelement_foreground.md) set to "Green".
 

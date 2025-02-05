@@ -10,11 +10,11 @@ public class RichEditTextDocument : ITextDocument
 # Windows.UI.Text.RichEditTextDocument
 
 ## -description
+
 Represents a rich text document that can be loaded, saved, and edited.
 
-Equivalent WinUI class: [Microsoft.UI.Text.RichEditTextDocument](/windows/winui/api/microsoft.ui.text.richedittextdocument).
-
 ## -remarks
+
 
 ### Version history
 

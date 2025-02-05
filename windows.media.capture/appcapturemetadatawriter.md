@@ -23,13 +23,14 @@ Currently, two different types of metadata items are supported **AppCaptureMetad
 
 When historical app capture is enabled, the system accumulates metadata written with **AppCaptureMetadataWriter** even when not actively capturing or broadcasting. When, for example, a capture of the previous 30 seconds is written to a video file on disk, the metadata associated with the recorded time window is included in the file. The system imposes a limit on the storage space that is allocated per app for storing accumulated metadata. You can get the currently available storage space by checking the [**RemainingStorageBytesAvailable**](/uwp/api/windows.media.capture.appcapturemetadatawriter.RemainingStorageBytesAvailable) property.
 
-When the all of the allotted space has been filled, the system will begin purging metadata using the [AppCaptureMetadataPriority](https://review.docs.microsoft.com/uwp/api/windows.media.capture.appcapturemetadatapriority) value, specified when the metadata items were written, and the age of each item in order to delete the oldest, least important data first. When this occurs, the [MetadataPurged](/uwp/api/windows.media.capture.appcapturemetadatawriter.MetadataPurged) event is raised. In response to this event, you may choose to reduce the amount of metadata your app is writing, but this is not required.
+When the all of the allotted space has been filled, the system will begin purging metadata using the [AppCaptureMetadataPriority](/uwp/api/windows.media.capture.appcapturemetadatapriority) value, specified when the metadata items were written, and the age of each item in order to delete the oldest, least important data first. When this occurs, the [MetadataPurged](/uwp/api/windows.media.capture.appcapturemetadatawriter.MetadataPurged) event is raised. In response to this event, you may choose to reduce the amount of metadata your app is writing, but this is not required.
 
 
 
 Metadata items are classified as **Important** or **Informational** as specified with the [AppCaptureMetadataPriority](appcapturemetadatapriority.md) enumeration. **Important** priority means the metadata will be uploaded to the Xbox Live service.  The metadata will be used to help users search clips or annotate broadcasts, among other things.
 Both **Important** and **Informational** metadata are embedded in the generated .mp4 file, so you should not include any private user information in the metadata.
 
+This API may throw an error if the background service has shut down due to idle timeout.
 
 ## -see-also
 

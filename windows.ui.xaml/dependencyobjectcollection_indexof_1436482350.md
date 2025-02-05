@@ -12,7 +12,7 @@ public bool IndexOf(Windows.UI.Xaml.DependencyObject value, System.UInt32 index)
 ## -description
 Retrieves the index of the specified item.
 
-Equivalent WinUI method: [Microsoft.UI.Xaml.DependencyObjectCollection.IndexOf](/windows/winui/api/microsoft.ui.xaml.dependencyobjectcollection.indexof).
+
 
 ## -parameters
 ### -param value
@@ -25,8 +25,6 @@ The index of the item to find, if found.
 **true** if an item with the specified value was found; otherwise, **false**.
 
 ## -remarks
-> [!NOTE]
-> The equivalent Microsoft .NET  API is [IndexOf](dependencyobjectcollection_indexof_1.md), or [Contains](dependencyobjectcollection_contains.md) if you want a Boolean return value that indicates that the value exists.
 
 ## -examples
 

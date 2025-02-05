@@ -12,7 +12,6 @@ public class RichTextBlock : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.C
 ## -description
 Represents a rich text display container that supports formatted text, hyperlinks, inline images, and other rich content. RichTextBlock supports a built-in overflow model.
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.Controls.RichTextBlock](/windows/winui/api/microsoft.ui.xaml.controls.richtextblock).
 
 ## -xaml-syntax
 ```xaml
@@ -68,11 +67,12 @@ The default [FontFamily](richtextblock_fontfamily.md) for RichTextBlock is Segoe
 ## -examples
 
 > [!TIP]
-> For more info, design guidance, and code examples, see [Rich text block](/windows/uwp/design/controls-and-patterns/rich-text-block).
->
-> If you have the **XAML Controls Gallery** app installed, click here to [open the app and see the RichTextBlock in action](xamlcontrolsgallery:/item/RichTextBlock).
-> + [Get the XAML Controls Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
-> + [Get the source code (GitHub)](https://github.com/Microsoft/Xaml-Controls-Gallery)
+> For more info, design guidance, and code examples, see [Rich text block](/windows/apps/design/controls/rich-text-block).
+
+> [!div class="nextstepaction"]
+> [Open the WinUI 2 Gallery app and see the RichTextBlock in action](winui2gallery:/item/RichTextBlock)
+
+> The **WinUI 2 Gallery** app includes interactive examples of most WinUI 2 controls, features, and functionality. Get the app from the [Microsoft Store](https://www.microsoft.com/store/productId/9MSVH128X2ZT) or get the source code on [GitHub](https://github.com/Microsoft/WinUI-Gallery/tree/winui2).
 
 This example shows a RichTextBlock with text selection and text wrapping enabled.
 

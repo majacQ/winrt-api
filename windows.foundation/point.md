@@ -50,7 +50,7 @@ Point values are used extensively for graphics properties and similar UI-related
 
 Either a space or a comma can be used as the delimiter between *X* and *Y* values. The common convention for coordinate points is to use a comma delimiter.
 
-Point structures cannot be declared as resources in a [ResourceDictionary](../windows.ui.xaml/resourcedictionary.md). A potential workaround is to use an [x:String](/windows/uwp/controls-and-patterns/resourcedictionary-and-xaml-resource-references) resource and then inject it into a string that's parsed with [XamlReader.Load](../windows.ui.xaml.markup/xamlreader_load_1077941801.md).
+Point structures cannot be declared as resources in a [ResourceDictionary](../windows.ui.xaml/resourcedictionary.md). A potential workaround is to [use an x:String resource](/windows/apps/design/style/xaml-resource-dictionary) and then inject it into a string that's parsed with [XamlReader.Load](../windows.ui.xaml.markup/xamlreader_load_1077941801.md).
 
 Some XAML usages use the Point type to represent a *logical point*. See "Logical Points" in Remarks.
 
@@ -74,7 +74,7 @@ The graphics elements used for defining a XAML UI often use Point-value properti
 
 The graphics elements use one of two models. Some of the graphics elements are derived from [FrameworkElement](../windows.ui.xaml/frameworkelement.md). These elements have a defined rendering behavior when placed in a UI and when element properties are assigned. Examples of this type of element are [Rectangle](../windows.ui.xaml.shapes/rectangle.md) and all the other types in the [Windows.UI.Xaml.Shapes](../windows.ui.xaml.shapes/windows_ui_xaml_shapes.md) namespace. Other graphics elements don't derive from [FrameworkElement](../windows.ui.xaml/frameworkelement.md), and don't have a rendering behavior of their own. Instead, these elements are composed to provide the value of a property on some other element that does have a rendering behavior. In other words, they're data for a more comprehensive graphics model. For example, the graphics elements you use to compose [Path.Data](../windows.ui.xaml.shapes/path_data.md), such as [LineSegment](../windows.ui.xaml.media/linesegment.md), often have a Point-value property.
 
-Some graphics elements use multiple Point values represented in a single property. These properties use the [PointCollection](../windows.ui.xaml.media/pointcollection.md) type. Any Windows Runtime property that takes a [PointCollection](../windows.ui.xaml.media/pointcollection.md) supports a XAML syntax that parses the attribute string to get [X](point_x.md) and [Y](point_y.md) values for multiple points. An example of a graphics property that uses [PointCollection](../windows.ui.xaml.media/pointcollection.md) is [Polygon.Points](../windows.ui.xaml.shapes/polygon.md).
+Some graphics elements use multiple Point values represented in a single property. These properties use the [PointCollection](../windows.ui.xaml.media/pointcollection.md) type. Any Windows Runtime property that takes a [PointCollection](../windows.ui.xaml.media/pointcollection.md) supports a XAML syntax that parses the attribute string to get [X](/uwp/api/windows.foundation.point.x) and [Y](/uwp/api/windows.foundation.point.y) values for multiple points. An example of a graphics property that uses [PointCollection](../windows.ui.xaml.media/pointcollection.md) is [Polygon.Points](../windows.ui.xaml.shapes/polygon.md).
 
 ### Point values from XAML input events, and hit testing
 

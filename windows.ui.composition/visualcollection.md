@@ -12,7 +12,7 @@ public class VisualCollection : Windows.UI.Composition.CompositionObject, Window
 ## -description
 Represents a collection of visual instances.
 
-Equivalent WinUI class: [Microsoft.UI.Composition.VisualCollection](/windows/winui/api/microsoft.ui.composition.visualcollection).
+
 
 ## -remarks
 VisualCollections are ordered from bottom to top and iterating or enumerating through a collection is always done from bottom to top.
@@ -20,4 +20,4 @@ VisualCollections are ordered from bottom to top and iterating or enumerating th
 ## -examples
 
 ## -see-also
-[Composition Visual Tree Overview](/en-us/windows/uwp/composition/composition-visual-tree), [CompositionObject](compositionobject.md), [IClosable](../windows.foundation/iclosable.md), [IIterable(Visual)](../windows.foundation.collections/iiterable_1.md)
+[Composition Visual Tree Overview](/windows/uwp/composition/composition-visual-tree), [CompositionObject](compositionobject.md), [IClosable](../windows.foundation/iclosable.md), [IIterable(Visual)](../windows.foundation.collections/iiterable_1.md)

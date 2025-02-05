@@ -12,7 +12,7 @@ public Windows.Foundation.Uri FontUri { get;  set; }
 ## -description
 Gets or sets the location of the font used for rendering the glyphs.
 
-Equivalent WinUI property: [Microsoft.UI.Xaml.Documents.Glyphs.FontUri](/windows/winui/api/microsoft.ui.xaml.documents.glyphs.fonturi).
+
 
 ## -xaml-syntax
 ```xaml
@@ -26,7 +26,7 @@ An object describing the Uniform Resource Identifier (URI) source of the font. T
 ## -remarks
 
 ## -examples
-This example shows how to reference a font file that's included in the Assets folder of a project. To embed a font file in a project, set it's **Build Action** to **Content** in Microsoft Visual Studio.
+This example shows how to reference a font file that's included in the Assets folder of a project. To embed a font file in a project, set its **Build Action** to **Content** in Microsoft Visual Studio.
 
 ```csharp
 glyph.FontUri = new Uri("ms-appx:///Assets/segoeui.ttf");

@@ -13,7 +13,18 @@ public class LauncherOptions : Windows.System.ILauncherOptions, Windows.System.I
 
 Specifies the options used to launch the default app for a file or URI.
 
+In a desktop app, before using an instance of this class in a way that displays UI, you'll need to associate the object with its owner's window handle. For more info, and code examples, see [Display WinRT UI objects that depend on CoreWindow](/windows/apps/develop/ui-input/display-ui-objects#winui-3-with-c).
+
 ## -remarks
+
+In some cases, when you call [Launcher](launcher.md) static methods to launch an app associated with a file type or URI protocol, you must specify exactly which app you want to be launched by passing a **LauncherOptions** parameter with the [TargetApplicationPackageFamilyName](launcheroptions_targetapplicationpackagefamilyname.md) property set to the package family name for the app package containing that app.
+
+Two such cases are as follows:
+
+1. You want to launch an app with a URI and pass extra input data to the launched app, using [Launcher.LaunchUriAsync(Uri, LauncherOptions, ValueSet)](launcher_launchuriasync_569877360.md).
+1. You want to launch an app with a URI and wait for the app to send output data back to your app, using any overload of [Launcher.LaunchUriForResultsAsync](launcher_launchuriforresultsasync_148601521.md).
+
+In these cases, both the calling app and launched app need to agree on how to interpret the extra data passed from one app to the other. The calling app cannot launch any app that happens to be the default for that URI protocol. In other cases, the **TargetApplicationPackageFamilyName** property is optional.
 
 ### Version history
 

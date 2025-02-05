@@ -12,7 +12,7 @@ public enum Windows.UI.Xaml.Controls.PivotSlideInAnimationGroup : int
 ## -description
 Defines constants that specify the different slide-in animation groups that [Pivot](pivot.md) elements can belong to.
 
-Equivalent WinUI enum: [PivotSlideInAnimationGroup](/windows/winui/api/microsoft.ui.xaml.controls.pivotslideinanimationgroup).
+
 
 ## -enum-fields
 ### -field Default:0
@@ -29,9 +29,10 @@ The element belongs to the third animation group. It slides in after elements in
 
 
 ## -remarks
-These values are used by the [Pivot.SlideInAnimationGroup](/uwp/api/windows.ui.xaml.controls.pivot#xaml-attached-properties) attached property.
+These values are used by the [Pivot.SlideInAnimationGroup](/uwp/api/windows.ui.xaml.controls.pivot.slideinanimationgroup) attached property.
 
 ## -examples
 
 ## -see-also
-[Pivot.SlideInAnimationGroup](/uwp/api/windows.ui.xaml.controls.pivot#xaml-attached-properties)
+
+[Pivot.SlideInAnimationGroup](/uwp/api/windows.ui.xaml.controls.pivot.slideinanimationgroup)

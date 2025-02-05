@@ -11,7 +11,7 @@ public struct KeyTime
 
 ## -description
 Specifies when a particular key frame should take place during an animation.
-Equivalent WinUI struct: [KeyTime](/windows/winui/api/microsoft.ui.xaml.media.animation.keytime).
+
 
 ## -xaml-syntax
 ```xaml
@@ -44,9 +44,9 @@ You cannot declare a KeyTime as a shareable object in a [ResourceDictionary](../
 
 ### Projection and members of KeyTime
 
-If you are using a Microsoft .NET language (C# or Microsoft Visual Basic), or Visual C++ component extensions (C++/CX), then KeyTime has some utility methods, and its data member [TimeSpan](keytime_timespan.md) is exposed as a read-only property, not a field.
+If you are using a Microsoft .NET language (C# or Microsoft Visual Basic), or Visual C++ component extensions (C++/CX), then KeyTime has some utility methods, and its data member [TimeSpan](/dotnet/api/system.windows.media.animation.keytime.timespan) is exposed as a read-only property, not a field.
 
-For Microsoft .NET, [Duration](../windows.ui.xaml/duration.md) exposes [TimeSpan.Parse](/dotnet/api/system.timespan.parse?view=dotnet-uwp-10.0&preserve-view=true) for its [TimeSpan](../windows.ui.xaml/duration_timespan.md), a [FromTimeSpan](keytime_fromtimespan.md) method, and an [Implicit](../windows.ui.xaml/duration_op_implicit.md) operator. These aren't available from the structure in Visual C++ component extensions (C++/CX) but you can use [KeyTimeHelper.FromTimeSpan](keytimehelper_fromtimespan_845885131.md).
+For Microsoft .NET, [Duration](../windows.ui.xaml/duration.md) exposes [TimeSpan.Parse](/dotnet/api/system.timespan.parse?view=dotnet-uwp-10.0&preserve-view=true) for its [TimeSpan](/dotnet/api/system.timespan?view=dotnet-uwp-10.0&preserve-view=true), a **FromTimeSpan** method, and an **Implicit** operator. These aren't available from the structure in Visual C++ component extensions (C++/CX) but you can use [KeyTimeHelper.FromTimeSpan](keytimehelper_fromtimespan_845885131.md).
 
 If you are programming with C++ using the Windows Runtime Template Library (WRL), then only the data member field **TimeSpan** exists as a member of KeyTime. WRL code can access [FromTimeSpan](keytimehelper_fromtimespan_845885131.md) as it exists on the [KeyTimeHelper](keytimehelper.md) class.
 

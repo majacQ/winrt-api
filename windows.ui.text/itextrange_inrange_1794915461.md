@@ -12,7 +12,7 @@ public bool InRange(Windows.UI.Text.ITextRange range)
 ## -description
 Determines whether this range is in or at the same text as a specified range.
 
-Equivalent WinUI method: [Microsoft.UI.Text.ITextRange.InRange](/windows/winui/api/microsoft.ui.text.itextrange.inrange).
+
 
 ## -parameters
 ### -param range
@@ -29,7 +29,7 @@ For one range (range2) to be contained in another (range1), both ranges must be 
 + Range2 must be a nondegenerate range with start and end positions at or within those of the range1.
 
 
-When the [ITextRange.FindText](ITextRange_FindText.md) method is used, you can use one range to walk another by specifying the appropriate limit count of characters.
+When the [ITextRange.FindText](itextrange_findtext_105657918.md) method is used, you can use one range to walk another by specifying the appropriate limit count of characters.
 
 ## -examples
 

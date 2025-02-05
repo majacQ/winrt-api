@@ -12,7 +12,7 @@ public Windows.UI.Xaml.Media.Animation.TransitionCollection ContentTransitions {
 ## -description
 Gets or sets the collection of [Transition](../windows.ui.xaml.media.animation/transition.md) style elements that apply to the content of a [ContentControl](contentcontrol.md).
 
-Equivalent WinUI property: [Microsoft.UI.Xaml.Controls.ContentControl.ContentTransitions](/windows/winui/api/microsoft.ui.xaml.controls.contentcontrol.contenttransitions).
+
 
 ## -xaml-syntax
 ```xaml
@@ -39,7 +39,7 @@ The strongly typed collection of [Transition](../windows.ui.xaml.media.animation
 
 Transition animations play a particular role in UI design of your app. The basic idea is that when there is a change or transition, the animation draws the attention of the user to the change.
 <!-- For more info, see  Transition animations and theme animations.-->
-It's not common to set the value of the ContentTransitionsproperty directly on a [ContentControl](contentcontrol.md)type that is a direct element of app UI. It's more common to have a transitions collection be a part of a visual state, template or style. In this case you use mechanisms such as [Setter](../windows.ui.xaml/setter.md)of a [Style](../windows.ui.xaml/style.md)to specify the ContentTransitionsproperty. Styles are typically stored as a XAML resource.
+It's not common to set the value of the ContentTransitions property directly on a [ContentControl](contentcontrol.md) type that is a direct element of app UI. It's more common to have a transitions collection be a part of a visual state, template or style. In this case you use mechanisms such as [Setter](../windows.ui.xaml/setter.md) of a [Style](../windows.ui.xaml/style.md) to specify the ContentTransitionsproperty. Styles are typically stored as a XAML resource.
 
 
 

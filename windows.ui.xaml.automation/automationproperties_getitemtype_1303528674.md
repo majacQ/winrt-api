@@ -10,9 +10,9 @@ public string GetItemType(Windows.UI.Xaml.DependencyObject element)
 # Windows.UI.Xaml.Automation.AutomationProperties.GetItemType
 
 ## -description
-Gets the value of the [AutomationProperties.ItemType](/uwp/api/windows.ui.xaml.automation.automationproperties#xaml-attached-properties) attached property for the specified [DependencyObject](../windows.ui.xaml/dependencyobject.md).
+Gets the value of the [AutomationProperties.ItemType](automationproperties_itemtype.md) attached property for the specified [DependencyObject](../windows.ui.xaml/dependencyobject.md).
 
-Equivalent WinUI method: [Microsoft.UI.Xaml.Automation.AutomationProperties.GetItemType](/windows/winui/api/microsoft.ui.xaml.automation.automationproperties.getitemtype).
+
 
 ## -parameters
 ### -param element
@@ -26,3 +26,5 @@ The item type of the element.
 ## -examples
 
 ## -see-also
+
+[AutomationProperties.ItemType](automationproperties_itemtype.md), [Attached properties overview](/windows/uwp/xaml-platform/attached-properties-overview)

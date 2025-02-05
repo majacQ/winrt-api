@@ -12,13 +12,15 @@ public CurrentChangingEventArgs(System.Boolean isCancelable)
 ## -description
 Initializes a new instance of the [CurrentChangingEventArgs](currentchangingeventargs.md) class.
 
-Equivalent WinUI constructor: [Microsoft.UI.Xaml.Data.CurrentChangingEventArgs.CurrentChangingEventArgs](/windows/winui/api/microsoft.ui.xaml.data.currentchangingeventargs.#ctor).
 
 ## -parameters
 ### -param isCancelable
-**true** to disable the ability to cancel a [CurrentItem](icollectionview_currentitem.md) change; **false** to enable cancellation.
+
+**true** if the event can be canceled; **false** if the event cannot be canceled.
 
 ## -remarks
+
+If the [IsCancelable](currentchangingeventargs_iscancelable.md) property value is **false**, setting the [Cancel](currentchangingeventargs_cancel.md) property to **true** will throw an `InvalidOperationException`.
 
 ## -examples
 

@@ -15,7 +15,7 @@ Defines the format of a bitmap plane.
 ## -struct-fields
 
 ### -field StartIndex
-The start index of the pixel data within the plane.
+The byte offset to the start of the pixel data within the plane.
     
 
 ### -field Width
@@ -27,7 +27,7 @@ The height of the plane, in pixels.
     
 
 ### -field Stride
-The stride of the bitmap data.
+The stride of the bitmap data, in bytes.
     
 
 ## -remarks

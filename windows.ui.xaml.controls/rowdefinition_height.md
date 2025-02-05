@@ -12,7 +12,7 @@ public Windows.UI.Xaml.GridLength Height { get;  set; }
 ## -description
 Gets the calculated height of a [RowDefinition](rowdefinition.md) element, or sets the [GridLength](../windows.ui.xaml/gridlength.md) value of a row that is defined by the [RowDefinition](rowdefinition.md).
 
-Equivalent WinUI property: [Microsoft.UI.Xaml.Controls.RowDefinition.Height](/windows/winui/api/microsoft.ui.xaml.controls.rowdefinition.height).
+
 
 ## -xaml-syntax
 ```xaml
@@ -42,4 +42,4 @@ It's more common to use **Star** sizing than absolute pixel values for a [Grid](
 ## -examples
 
 ## -see-also
-[Grid](grid.md), [Grid.RowDefinitions](grid_rowdefinitions.md), [Grid.Row](/uwp/api/windows.ui.xaml.controls.grid#xaml-attached-properties), [Define layouts with XAML](/windows/uwp/layout/layouts-with-xaml)
+[Grid](grid.md), [Grid.RowDefinitions](grid_rowdefinitions.md), [Grid.Row](/uwp/api/windows.ui.xaml.controls.grid.row), [Define layouts with XAML](/windows/uwp/layout/layouts-with-xaml)

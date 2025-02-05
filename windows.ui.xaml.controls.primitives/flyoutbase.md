@@ -13,7 +13,7 @@ public class FlyoutBase : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Cont
 
 Represents the base class for flyout controls, such as [Flyout](../windows.ui.xaml.controls/flyout.md) and [MenuFlyout](../windows.ui.xaml.controls/menuflyout.md).
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase](/windows/winui/api/microsoft.ui.xaml.controls.primitives.flyoutbase).
+
 
 ## -remarks
 
@@ -29,7 +29,7 @@ In order to support XAML processor access to the attached properties, and also t
 
 | Attached property | Description |
 | - | - |
-| AttachedFlyout | Gets or sets the flyout attached to a [FrameworkElement](../windows.ui.xaml/frameworkelement.md).<ul><li>Type: FlyoutBase</li><li>Identifier field: <a href="/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyoutproperty">AttachedFlyoutProperty</a></li><li>Accessor methods: <a href="/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.getattachedflyout">GetAttachedFlyout</a>, <a href="/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.setattachedflyout">SetAttachedFlyout</a></li></ul>To attach a flyout to a Button, use [Button.Flyout](../windows.ui.xaml.controls/button_flyout.md) instead.|
+| [AttachedFlyout](flyoutbase_attachedflyout.md) | Gets or sets the flyout attached to a [FrameworkElement](../windows.ui.xaml/frameworkelement.md).|
 
 ### Version history
 

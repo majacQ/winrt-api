@@ -12,7 +12,7 @@ public void RemoveAt(System.UInt32 index)
 ## -description
 Removes the item at the specified index.
 
-Equivalent WinUI method: [Microsoft.UI.Xaml.DependencyObjectCollection.RemoveAt](/windows/winui/api/microsoft.ui.xaml.dependencyobjectcollection.removeat).
+
 
 ## -parameters
 ### -param index
@@ -20,11 +20,6 @@ The index position of the item to remove.
 
 ## -remarks
 If successful, calling this method reduces the collection size by one. Items with index values greater than the called index have their index values reduced by one.
-
-
-
-> [!NOTE]
-> The equivalent Microsoft .NET  API is [RemoveAt](dependencyobjectcollection_removeat_1.md).
 
 ## -examples
 

@@ -13,6 +13,9 @@ public class PhoneCallOrigin : Windows.ApplicationModel.Calls.Provider.IPhoneCal
 
 A collection of information about the origin of a phone call.
 
+> [!NOTE]
+> This class is deprecated.
+
 ## -remarks
 
 ### Version history
@@ -25,8 +28,6 @@ A collection of information about the origin of a phone call.
 ## -examples
 
 ## -see-also
-
-[Caller ID sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CallerID)
 
 ## -capabilities
 

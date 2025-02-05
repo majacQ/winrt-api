@@ -14,7 +14,7 @@ public UIElement DataTemplateSelector.GetElement(ElementFactoryGetArgs args)
 
 Creates or retrieves an existing instance of the [UIElement](../windows.ui.xaml/uielement.md) object declared in the [DataTemplate](../windows.ui.xaml/datatemplate.md) returned by [SelectTemplate](datatemplateselector_selecttemplate_737484049.md).
 
-Equivalent WinUI method: [Microsoft.UI.Xaml.Controls.DataTemplateSelector.GetElement](/windows/winui/api/microsoft.ui.xaml.controls.datatemplateselector.getelement).
+
 
 ## -parameters
 
@@ -32,6 +32,6 @@ For more info, see the remarks for the [DataTemplate.GetElement](../windows.ui.x
 
 ## -see-also
 
-[IElementFactory](ielementfactory.md), [DataTemplate.GetElement](/uwp/api/windows.ui.xaml.datatemplate.getelement), [DataTemplate.RecycleElement](/uwp/api/windows.ui.xaml.datatemplate.recycleelement), [DataTemplateSelector.RecycleElement](/uwp/api/windows.ui.xaml.controls.datatemplateselector.recycleelement)
+[IElementFactory](../windows.ui.xaml/ielementfactory.md), [DataTemplate.GetElement](/uwp/api/windows.ui.xaml.datatemplate.getelement), [DataTemplate.RecycleElement](/uwp/api/windows.ui.xaml.datatemplate.recycleelement), [DataTemplateSelector.RecycleElement](/uwp/api/windows.ui.xaml.controls.datatemplateselector.recycleelement)
 
 ## -examples

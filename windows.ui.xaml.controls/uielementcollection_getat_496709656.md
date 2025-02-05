@@ -12,7 +12,6 @@ public Windows.UI.Xaml.UIElement GetAt(System.UInt32 index)
 ## -description
 Returns the item located at the specified index.
 
-Equivalent WinUI method: [Microsoft.UI.Xaml.Controls.UIElementCollection.GetAt](/windows/winui/api/microsoft.ui.xaml.controls.uielementcollection.getat).
 
 ## -parameters
 ### -param index
@@ -22,7 +21,7 @@ The integer index for the value to retrieve.
 The [UIElement](../windows.ui.xaml/uielement.md) value at the specified index.
 
 ## -remarks
-If you are programming using C# or Microsoft Visual Basic, see [Item (indexer)](/uwp/api/windows.ui.xaml.controls.uielementcollection.item).
+If you are programming using C# or Microsoft Visual Basic, see [Item (indexer)](/office/vba/Language/Reference/User-Interface-Help/item-method-visual-basic-for-applications).
 
 ## -examples
 

@@ -14,6 +14,8 @@ public class SecondaryTile : Windows.UI.StartScreen.ISecondaryTile, Windows.UI.S
 
 Creates, enumerates, and provides information about a secondary tile.
 
+In a desktop app, before using an instance of this class in a way that displays UI, you'll need to associate the object with its owner's window handle. For more info, and code examples, see [Display WinRT UI objects that depend on CoreWindow](/windows/apps/develop/ui-input/display-ui-objects#winui-3-with-c) and [Pin secondary tiles from desktop apps](/windows/apps/design/shell/tiles-and-notifications/secondary-tiles-desktop-pinning).
+
 ## -remarks
 
 ## -examples
@@ -77,7 +79,7 @@ The following example demonstrates how to use the [FindAllForPackageAsync](secon
 
 ```csharp
 // Get all secondary tiles
-var tiles = await SecondaryTile.FindAllAsync();
+var tiles = await SecondaryTile.FindAllForPackageAsync();
 ```
 
 The following example demonstrates how to use the [TileUpdateManager.createTileUpdaterForSecondaryTile](../windows.ui.notifications/tileupdatemanager_createtileupdaterforsecondarytile_445640521.md) method to send a notification to a secondary tile with an ID of "SecondaryTile.Dynamic". Note that the example provides both a wide and square version of the notification because the user has control over which form of the tile is showing.

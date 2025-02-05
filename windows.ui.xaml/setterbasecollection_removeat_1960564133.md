@@ -12,7 +12,7 @@ public void RemoveAt(System.UInt32 index)
 ## -description
 Removes the item at the specified index.
 
-Equivalent WinUI method: [Microsoft.UI.Xaml.SetterBaseCollection.RemoveAt](/windows/winui/api/microsoft.ui.xaml.setterbasecollection.removeat).
+
 
 ## -parameters
 ### -param index
@@ -24,7 +24,7 @@ If successful, calling this method reduces the collection size by one. Items wit
 
 
 > [!NOTE]
-> The equivalent Microsoft .NET  API is [RemoveAt](setterbasecollection_removeat_1.md).
+> The equivalent Microsoft .NET API is [RemoveAt](/dotnet/api/system.collections.objectmodel.collection-1.removeat).
 
 ## -examples
 

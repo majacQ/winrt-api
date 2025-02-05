@@ -12,7 +12,7 @@ virtual protected Windows.UI.Xaml.Controls.GroupStyle SelectGroupStyleCore(Syste
 ## -description
 When implemented by a derived class, returns a specific [GroupStyle](groupstyle.md) for a given group and level.
 
-Equivalent WinUI method: [Microsoft.UI.Xaml.Controls.GroupStyleSelector.SelectGroupStyleCore](/windows/winui/api/microsoft.ui.xaml.controls.groupstyleselector.selectgroupstylecore).
+
 
 ## -parameters
 ### -param group
@@ -31,4 +31,3 @@ The [GroupStyle](groupstyle.md) to use for the specified group and level.
 ## -examples
 
 ## -see-also
-[How to group items in a list or grid](/previous-versions/windows/apps/hh780627(v=win.10))

@@ -13,7 +13,6 @@ public Windows.UI.Text.TextScript TextScript { get;  set; }
 
 Gets or sets the character repertoire.
 
-Equivalent WinUI property: [Microsoft.UI.Text.ITextCharacterFormat.TextScript](/windows/winui/api/microsoft.ui.text.itextcharacterformat.textscript).
 
 ## -property-value
 
@@ -23,7 +22,7 @@ The character repertoire.
 
 Character repertoires are typically scripts like Arabic and Latin, but there are also character repertoires for symbols and Emoji.
 
-To learn more about character repertoires, see [RichEdit Font Binding](/en-us/archive/blogs/murrays/richedit-font-binding).
+To learn more about character repertoires, see [RichEdit Font Binding](/windows/win32/controls/use-font-binding-in-rich-edit-controls).
 
 ## -examples
 

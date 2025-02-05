@@ -12,7 +12,7 @@ public Windows.UI.Xaml.DataTemplate HeaderTemplate { get;  set; }
 ## -description
 Gets or sets the template that is used to display the group header.
 
-Equivalent WinUI property: [Microsoft.UI.Xaml.Controls.GroupStyle.HeaderTemplate](/windows/winui/api/microsoft.ui.xaml.controls.groupstyle.headertemplate).
+
 
 ## -xaml-syntax
 ```xaml
@@ -40,4 +40,3 @@ A [DataTemplate](../windows.ui.xaml/datatemplate.md) object that is used to disp
 ## -examples
 
 ## -see-also
-[How to group items in a list or grid](/previous-versions/windows/apps/hh780627(v=win.10))

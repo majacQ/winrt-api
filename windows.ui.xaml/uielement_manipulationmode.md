@@ -12,7 +12,7 @@ public Windows.UI.Xaml.Input.ManipulationModes ManipulationMode { get;  set; }
 ## -description
 Gets or sets the [ManipulationModes](../windows.ui.xaml.input/manipulationmodes.md) value used for [UIElement](uielement.md) behavior and interaction with gestures. Setting this value enables handling the manipulation events from this element in app code.
 
-Equivalent WinUI property: [Microsoft.UI.Xaml.UIElement.ManipulationMode](/windows/winui/api/microsoft.ui.xaml.uielement.manipulationmode).
+
 
 ## -xaml-syntax
 ```xaml
@@ -48,14 +48,13 @@ You can specify more than one of the flagwise [ManipulationModes](../windows.ui.
 + Don't combine the inertial values with the non-inertial values.
 + The **All** value isn't the true additive value of all the flags (if values are compared bitwise). A value of **All** doesn't necessarily indicate that the combination of all the values is valid either, or that any specific value is set.
 
-
+### Notes for previous versions
 
 <!--The following remark is relevant for Windows 8 > 8.1 migration. See WBB 454712-->
-### Windows 8 behavior
-
-On Windows 8, setting ManipulationMode to a value that combines **System** with any other value will throw an exception, so some of the combinations mentioned above won't work for Windows 8. Starting with Windows 8.1, you can combine **System** with other values.
-
-Apps that were compiled for Windows 8 but running on Windows 8.1 use the new behavior and permit combining **System** with other values.
+> **Windows 8.x**
+> On Windows 8, setting ManipulationMode to a value that combines **System** with any other value will throw an exception, so some of the combinations mentioned above won't work for Windows 8. Starting with Windows 8.1, you can combine **System** with other values.
+>
+> Apps that were compiled for Windows 8 but running on Windows 8.1 use the new behavior and permit combining **System** with other values.
 
 ## -examples
 

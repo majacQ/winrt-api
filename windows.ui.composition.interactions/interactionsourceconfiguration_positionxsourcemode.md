@@ -14,7 +14,7 @@ public InteractionSourceRedirectionMode PositionXSourceMode { get;  set; }
 
 Gets or sets a value that indicates how interactions are processed for this [VisualInteractionSource](visualinteractionsource.md) input on the X axis.
 
-Equivalent WinUI property: [Microsoft.UI.Composition.Interactions.InteractionSourceConfiguration.PositionXSourceMode](/windows/winui/api/microsoft.ui.composition.interactions.interactionsourceconfiguration.positionxsourcemode).
+
 
 ## -property-value
 
@@ -28,8 +28,6 @@ For more info, see [VisualInteractionSource.PointerWheelConfig](visualinteractio
 
 ## -see-also
 
-[VisualInteractionSource.PointerWheelConfig](visualinteractionsource_pointerwheelconfig.md)
-[VisualInteractionSource.PositionXSourceMode](visualinteractionsource_positionxsourcemode.md)
+[VisualInteractionSource.PointerWheelConfig](visualinteractionsource_pointerwheelconfig.md), [VisualInteractionSource.PositionXSourceMode](visualinteractionsource_positionxsourcemode.md)
 
 ## -examples
-

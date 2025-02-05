@@ -12,7 +12,7 @@ public class ToolTipService : Windows.UI.Xaml.Controls.IToolTipService
 ## -description
 Represents a service that provides static methods to display a [ToolTip](tooltip.md).
 
-Equivalent WinUI class: [Microsoft.UI.Xaml.Controls.ToolTipService](/windows/winui/api/microsoft.ui.xaml.controls.tooltipservice).
+
 
 ## -remarks
 
@@ -22,16 +22,16 @@ A [ToolTip](tooltip.md) must be assigned to another UI element that is its owner
 
 By default, a [ToolTip](tooltip.md) is displayed centered above the pointer. The placement is not constrained by the app window, so the [ToolTip](tooltip.md) might be displayed partially or completely outside of the app window bounds.
 
-If a [ToolTip](tooltip.md) obscures the content it is referring to, you can adjust it's placement. Use the ToolTipService.Placement attached property to place the [ToolTip](tooltip.md) above, below, left, or right of the pointer.
+If a [ToolTip](tooltip.md) obscures the content it is referring to, you can adjust its placement. Use the ToolTipService.Placement attached property to place the [ToolTip](tooltip.md) above, below, left, or right of the pointer.
 
 If there is no explicit PlacementTarget, the placement target for a tooltip is the element that specifies a value for its TooltipService.ToolTip attached property value. Any Placement value (either as an attached property or as an attribute on an explicit ToolTip element) applies to that target.
 
 ### Notes for previous versions
 
 > **Windows 8.x**
->   [ToolTip](tooltip.md) is intended only for use in Windows. The [ToolTip](tooltip.md) type is available in Windows Phone projects for compatibility with universal project templates, but the [ToolTip](tooltip.md) is not shown in the Windows Phone  UI.
+> [ToolTip](tooltip.md) is intended only for use in Windows. The [ToolTip](tooltip.md) type is available in Windows Phone projects for compatibility with universal project templates, but the [ToolTip](tooltip.md) is not shown in the Windows Phone  UI.
 >
->   [ToolTip](tooltip.md) is displayed only within the bounds of the app window. It's placement might be adjusted to stay within those bounds.
+> [ToolTip](tooltip.md) is displayed only within the bounds of the app window. It's placement might be adjusted to stay within those bounds.
 
 ### XAML attached properties
 
@@ -41,9 +41,9 @@ In order to support XAML processor access to the attached properties, and also t
 
 | Attached property | Description |
 | - | - |
-| Placement | Gets or sets a value that indicates how a ToolTip is positioned in relation to the placement target.<ul><li>Type: [PlacementMode](../windows.ui.xaml.controls.primitives/placementmode.md)</li><li>Identifier field: <a href="/uwp/api/windows.ui.xaml.controls.tooltipservice.placementproperty">PlacementProperty</a></li><li>Accessor methods: <a href="/uwp/api/windows.ui.xaml.controls.tooltipservice.getplacement">GetPlacement</a>, <a href="/uwp/api/windows.ui.xaml.controls.tooltipservice.setplacement">SetPlacement</a></li></ul> |
-| PlacementTarget | Gets or sets the object relative to which a tooltip is positioned.<ul><li>Type: [UIElement](../windows.ui.xaml/uielement.md)</li><li>Identifier field: <a href="/uwp/api/windows.ui.xaml.controls.tooltipservice.placementtargetproperty">PlacementTargetProperty</a></li><li>Accessor methods: <a href="/uwp/api/windows.ui.xaml.controls.tooltipservice.getplacementtarget">GetPlacementTarget</a>, <a href="/uwp/api/windows.ui.xaml.controls.tooltipservice.setplacementtarget">SetPlacementTarget</a></li></ul> |
-| ToolTip | Gets or sets the object or string content of an element's ToolTip.<ul><li>Type: object</li><li>Identifier field: <a href="/uwp/api/windows.ui.xaml.controls.tooltipservice.tooltipproperty">ToolTipProperty</a></li><li>Accessor methods: <a href="/uwp/api/windows.ui.xaml.controls.tooltipservice.gettooltip">GetToolTip</a>, <a href="/uwp/api/windows.ui.xaml.controls.tooltipservice.settooltip">SetToolTip</a></li></ul> |
+| [Placement](tooltipservice_placement.md) | Gets or sets a value that indicates how a `ToolTip` is positioned in relation to the placement target. |
+| [PlacementTarget](tooltipservice_placementtarget.md) | Gets or sets the object relative to which a `ToolTip` is positioned. |
+| [ToolTip](tooltipservice_tooltip.md) | Gets or sets the object or string content of an element's `ToolTip`. |
 
 ## -examples
 The following code example demonstrates the placement modes for a [ToolTip](tooltip.md).

@@ -10,12 +10,13 @@ public string GetString(System.String resource)
 # Windows.ApplicationModel.Resources.ResourceLoader.GetString
 
 ## -description
+
 Returns the most appropriate string value of a resource, specified by resource identifier, for the default [ResourceContext](../windows.applicationmodel.resources.core/resourcecontext.md) of the view in which the [ResourceLoader](resourceloader.md) was obtained using [ResourceLoader.GetForCurrentView](resourceloader_getforcurrentview_1363600702.md).
 
 
 <!--Writer todo: Link to how to create and identify resources.-->
 
-Equivalent WinUI method: [Microsoft.ApplicationModel.Resources.ResourceLoader.GetString](/windows/winui/api/microsoft.applicationmodel.resources.resourceloader.getstring).
+Equivalent **WinUI 2 API for UWP**: [Microsoft.Windows.ApplicationModel.Resources.ResourceLoader.GetString](/windows/windows-app-sdk/api/winrt/microsoft.windows.applicationmodel.resources.resourceloader.getstring) (for WinUI in the [Windows App SDK](/windows/apps/windows-app-sdk/), see the **[Windows App SDK namespaces](/windows/windows-app-sdk/api/winrt/)**).
 
 ## -parameters
 ### -param resource

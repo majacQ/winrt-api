@@ -13,6 +13,9 @@ public class PhoneCallOriginManager
 
 Controls which application is responsible for determining the origin of incoming calls and sets the [PhoneCallOrigin](phonecallorigin.md) information.
 
+> [!NOTE]
+> This class is deprecated.
+
 ## -remarks
 
 ### Version history
@@ -25,8 +28,6 @@ Controls which application is responsible for determining the origin of incoming
 ## -examples
 
 ## -see-also
-
-[Caller ID sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CallerID)
 
 ## -capabilities
 

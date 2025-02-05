@@ -13,6 +13,8 @@ public enum SwipeBehaviorOnInvoked : int
 
 Defines constants that specify how a [SwipeControl](swipecontrol.md) behaves after a command is invoked.
 
+Equivalent **WinUI 2 API for UWP**: [Microsoft.UI.Xaml.Controls.SwipeBehaviorOnInvoked](/windows/winui/api/microsoft.ui.xaml.controls.swipebehavioroninvoked) (for WinUI in the [Windows App SDK](/windows/apps/windows-app-sdk/), see the **[Windows App SDK namespaces](/windows/windows-app-sdk/api/winrt/)**).
+
 ## -enum-fields
 
 ### -field RemainOpen:2
@@ -31,10 +33,6 @@ In **Reveal** mode, the SwipeControl closes after an item is invoked. In **Execu
 
 ## -see-also
 
-+ [SwipeMode](swipemode.md) enumeration
-+ [SwipeItems.Mode](swipeitems_mode.md) property
-+ [SwipeItem.Invoked](swipeitem_invoked.md) event
-+ [SwipeControl](swipecontrol.md) class
+[SwipeMode enumeration](swipemode.md), [SwipeItems.Mode property](swipeitems_mode.md), [SwipeItem.Invoked event](swipeitem_invoked.md), [SwipeControl class](swipecontrol.md)
 
 ## -examples
-

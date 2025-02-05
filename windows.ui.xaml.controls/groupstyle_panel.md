@@ -12,7 +12,7 @@ public Windows.UI.Xaml.Controls.ItemsPanelTemplate Panel { get;  set; }
 ## -description
 Gets or sets a template that creates the panel used to lay out the items.
 
-Equivalent WinUI property: [Microsoft.UI.Xaml.Controls.GroupStyle.Panel](/windows/winui/api/microsoft.ui.xaml.controls.groupstyle.panel).
+
 
 ## -xaml-syntax
 ```xaml
@@ -42,4 +42,3 @@ An [ItemsPanelTemplate](itemspaneltemplate.md) object element should contain exa
 ## -examples
 
 ## -see-also
-[How to group items in a list or grid](/previous-versions/windows/apps/hh780627(v=win.10))
